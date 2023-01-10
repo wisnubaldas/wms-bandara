@@ -18,3 +18,9 @@ application/logs/*
 /vendor/
 /files/
 /application/modules/api/respon_xml/*
+lock_*
+composer.lock
+application/config/database.php
+.env
+vendor/
+storage/
