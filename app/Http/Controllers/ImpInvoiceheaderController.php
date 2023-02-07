@@ -6,17 +6,15 @@ use Illuminate\Http\Request;
 use App\Repositories\ImpInvoiceheaderRepository;
 use App\Http\Resources\ImportResource;
 use App\Criteria\InvByDateCriteria;
-use App\UseCase\TesUseCase;
 class ImpInvoiceheaderController extends Controller
 {
     protected $repository;
-    public function __construct(ImpInvoiceheaderRepository $repository, TesUseCase $use_case) {
+    public function __construct(ImpInvoiceheaderRepository $repository) {
         $this->repository = $repository;
-        $this->use_case = $use_case;
     }
     public function all()
     {
-        $this->repository->pushCriteria(InvByDateCriteria::class);
+        // $this->repository->pushCriteria(InvByDateCriteria::class);
         return new ImportResource($this->repository->paginate(10,['TotalWarehouseFee','InvoiceNumber']));
     }
 }

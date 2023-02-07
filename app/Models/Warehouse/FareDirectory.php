@@ -12,6 +12,7 @@ class FareDirectory extends Model
     protected $connection= 'rdwarehouse_jkt';
     protected $table = 'fare_directory';
     protected $primaryKey = 'noid';
+    
     static public function wh_fee($inv)
     {
         return self::select('ItemCode','valueitem')

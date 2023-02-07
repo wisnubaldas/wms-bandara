@@ -7,6 +7,8 @@ use App\Criteria\ImpInvoiceCriteria;
 use App\Repositories\ImpInvoiceheaderRepository;
 use App\Entities\ImpInvoiceheader;
 use App\Validators\ImpInvoiceheaderValidator;
+use Prettus\Repository\Contracts\CacheableInterface;
+use Prettus\Repository\Traits\CacheableRepository;
 
 /**
  * Class ImpInvoiceheaderRepositoryEloquent.
@@ -15,6 +17,12 @@ use App\Validators\ImpInvoiceheaderValidator;
  */
 class ImpInvoiceheaderRepositoryEloquent extends BaseRepository implements ImpInvoiceheaderRepository
 {
+     use CacheableRepository;
+     
+    // public function presenter()
+    // {
+    //     return "App\\Presenter\\InvoiceErpPresenter";
+    // }
     /**
      * Specify Model class name
      *

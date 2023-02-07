@@ -8,7 +8,7 @@ namespace App\UseCase;
  *
  * @package namespace App\UseCase;
  */
-interface TesUseCaseInterface
+interface SendingInvoiceUseCaseInterface
 {
-    //
+    public function invoice_data();
 }

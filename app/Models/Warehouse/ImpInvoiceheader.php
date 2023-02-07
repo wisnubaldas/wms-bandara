@@ -12,12 +12,12 @@ class ImpInvoiceheader extends Model
     protected $table = "imp_invoiceheader";
     protected $primaryKey = 'noid';
     public $timestamps = false;
-
+    protected $fillable = array("noid", "InvoiceNumber", "TotalPieces", "TotalCAW", "TotalNetto", "TotalWarehouseFee", "TotalAssistancyFee", "TotalCoolRoomFee", "TotalAirConditioningFee", "TotalColdStorageFee", "TotalStrongRoomFee", "TotalDangerousRoomFee", "TotalOtherFee", "TotalAirportContriFee", "AdministrationFee", "DocumentFee", "SubTotalFee", "TaxFee", "StampFee", "GrandTotalFee", "EmployeeNumber", "DateOfTransaction", "TimeOfTransaction", "PrintNumber", "DRSCNumber", "AirlinesCode", "PaymentCode", "AgreementCode", "KursIDR", "Referensi", "TaxNumber", "CustomerCode", "ShiftCode", "ClearanceType", "SPPB", "tglSPPB", "flagPOD", "void", "token", "ref_invoice", "created_at", "updated_at");
     // const CREATED_AT = 'created_at';
 
     public function detail()
     {
-        return $this->hasMany(ImpInvoicedetail::class,'InvoiceNumber','InvoiceNumber');
+        return $this->hasOne(ImpInvoicedetail::class,'InvoiceNumber','InvoiceNumber');
     }
     // public function pecah_pos()
     // {

@@ -28,8 +28,8 @@ class RepositoryServiceProvider extends ServiceProvider
             \App\Repositories\ImpInvoiceheaderRepositoryEloquent::class
         );
         $this->app->bind(
-            \App\UseCase\TesUseCaseInterface::class, 
-            \App\Repositories\TesUseCase::class
+            \App\UseCase\SendingInvoiceUseCaseInterface::class, 
+            \App\Repositories\SendingInvoiceUseCase::class
         );
         //:end-bindings:
     }
