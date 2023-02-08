@@ -3,8 +3,11 @@
 namespace App\UseCase;
 
 use App\Repositories\ImpInvoiceheaderRepository;
+use App\Repositories\EksInvoiceHeaderRepository;
+
 use App\Http\Resources\ImportResource;
 use App\Criteria\InvByDateCriteria;
+use App\Criteria\EksInvoiceHeaderCriteria;
 
 /**
  * Class UseCase.
@@ -14,11 +17,14 @@ use App\Criteria\InvByDateCriteria;
 class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
 {
     protected $repository;
-    public function __construct(ImpInvoiceheaderRepository $repository) {
+    protected $eksport;
+    public function __construct(ImpInvoiceheaderRepository $repository, 
+                                EksInvoiceHeaderRepository $eksport) {
         $this->repository = $repository;
+        $this->eksport = $eksport;
     }
 
-    public function invoice_data()
+    public function import_invoice()
     {
         // ini buat presenter nya
         $this->repository->setPresenter("App\\Presenters\\InvoiceErpPresenter");
@@ -30,5 +36,15 @@ class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
                 }])->all();
         
     }
-    
+    public function eksport_invoice()
+    {
+        // $this->eksport->setPresenter("App\\Presenters\\InvoiceErpPresenter");
+        $this->eksport->pushCriteria(EksInvoiceHeaderCriteria::class);
+        return $this->eksport->limit(2);
+        // ->findWhere(['InvoiceNumber'=>'BGD1.INV.22.356498']);
+    }
+    public function pecah_pos_invoice()
+    {
+        # code...
+    }
 }

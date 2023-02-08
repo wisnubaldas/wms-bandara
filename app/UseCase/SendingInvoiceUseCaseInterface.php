@@ -10,5 +10,8 @@ namespace App\UseCase;
  */
 interface SendingInvoiceUseCaseInterface
 {
-    public function invoice_data();
+    public function import_invoice();
+    public function eksport_invoice();
+    public function pecah_pos_invoice();
+
 }

@@ -28,7 +28,9 @@ class SendingInvoice extends Command
      */
     public function handle(SendingInvoiceUseCase $sending_inv)
     {
-        $x = $sending_inv->invoice_data();
+        $sending_inv->import_invoice();
+        dd($sending_inv->eksport_invoice()->toJson(true));
+
         ErpNextDomain::send($x['data']);
         return Command::SUCCESS;
     }

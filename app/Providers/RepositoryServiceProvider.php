@@ -31,6 +31,7 @@ class RepositoryServiceProvider extends ServiceProvider
             \App\UseCase\SendingInvoiceUseCaseInterface::class, 
             \App\Repositories\SendingInvoiceUseCase::class
         );
+        $this->app->bind(\App\Repositories\EksInvoiceHeaderRepository::class, \App\Repositories\EksInvoiceHeaderRepositoryEloquent::class);
         //:end-bindings:
     }
 }
