@@ -38,10 +38,12 @@ class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
     }
     public function eksport_invoice()
     {
-        // $this->eksport->setPresenter("App\\Presenters\\InvoiceErpPresenter");
+        $this->eksport->setPresenter("App\\Presenters\\EksInvoiceHeaderPresenter");
         $this->eksport->pushCriteria(EksInvoiceHeaderCriteria::class);
-        return $this->eksport->limit(2);
-        // ->findWhere(['InvoiceNumber'=>'BGD1.INV.22.356498']);
+        $this->eksport->pushCriteria(InvByDateCriteria::class);
+
+        // return $this->eksport->limit(2);
+        return $this->eksport->findWhereIn('InvoiceNumber',['BGD1.INV.22.356498']);
     }
     public function pecah_pos_invoice()
     {

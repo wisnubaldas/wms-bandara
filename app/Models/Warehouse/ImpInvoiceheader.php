@@ -19,6 +19,10 @@ class ImpInvoiceheader extends Model
     {
         return $this->hasOne(ImpInvoicedetail::class,'InvoiceNumber','InvoiceNumber');
     }
+    public function customer()
+    {
+        return $this->hasOne(MstCustomer::class,'CustomerCode','CustomerCode');
+    }
     // public function pecah_pos()
     // {
     //     return $this->hasOne(ImpInvoicepecahpos::class,'InvoiceNumber','InvoiceNumber');

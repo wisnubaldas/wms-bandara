@@ -17,5 +17,9 @@ class EksInvoiceheader extends Model
     {
         return $this->hasOne(EksInvoicedetail::class,'InvoiceNumber','InvoiceNumber');
     }
+    public function customer()
+    {
+        return $this->hasOne(MstCustomer::class,'CustomerCode','CustomerCode');
+    }
     
 }

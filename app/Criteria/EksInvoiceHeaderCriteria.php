@@ -28,7 +28,7 @@ class EksInvoiceHeaderCriteria implements CriteriaInterface
                                 'weighing'=>function($weghing){
                                     return $weghing->with('dtl_weigh');
                             }]);
-                    }])
+                    },'customer'])
                     ->where('PaymentCode','!=','F')
                     ->whereNotIn('AgreementCode',['FX-MAWB']);
     }
