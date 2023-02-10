@@ -42,8 +42,8 @@ class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
         $this->eksport->pushCriteria(EksInvoiceHeaderCriteria::class);
         $this->eksport->pushCriteria(InvByDateCriteria::class);
 
-        // return $this->eksport->limit(2);
-        return $this->eksport->findWhereIn('InvoiceNumber',['BGD1.INV.22.356498']);
+        return $this->eksport->all();
+        // return $this->eksport->findWhereIn('InvoiceNumber',['BGD1.INV.22.356498']);
     }
     public function pecah_pos_invoice()
     {
