@@ -26,7 +26,9 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "league/fractal": "^0.20.1"
+        "league/fractal": "^0.20.1",
+        "wisnubaldas/baldas-module":"@dev",
+        "wisnubaldas/ctos":"@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

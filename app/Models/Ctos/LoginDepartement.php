@@ -16,4 +16,8 @@ class LoginDepartement extends Model
     public $timestamps = false;
     // const CREATED_AT = 'created_at';
     // const UPDATED_AT = 'modify_at';
+    public function master_departement()
+    {
+         return $this->belongsTo(MasterDepartement::class, 'DepartmenCode','DepartmenCode');
+    }
 }
