@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Ctos;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Ctos\MasterDepartement;
+use App\Models\Ctos\LoginDepartement;
 use Illuminate\Database\Eloquent\Builder;
 class ContLoginController extends Controller
 {
@@ -16,8 +17,9 @@ class ContLoginController extends Controller
 		// 	$query->where('EmployeeNumber','138877');
 		// })->first();
 		// return $dp;
-		
-		return MasterDepartement::with('login_departement')->get();
+		// return LoginDepartement::first();
+		$x = MasterDepartement::with(['login_departement'])->get();
+		dd($x);
 		// $listhasil = $this->login_model->list_logindepartmen($EmployeeNumber);
 		// // menjadikan objek menjadi JSON
 		// $hasil = json_encode($listhasil);

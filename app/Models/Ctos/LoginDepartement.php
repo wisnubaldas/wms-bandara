@@ -9,7 +9,7 @@ class LoginDepartement extends Model
 {
     use HasFactory;
     protected $connection= 'rdlogin';
-    protected $table = 'logindepartemen';
+    protected $table = 'logindepartmen';
     protected $primaryKey = 'noid';
     // public $incrementing = false;
     // protected $keyType = 'string';

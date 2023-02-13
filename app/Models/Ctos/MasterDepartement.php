@@ -10,7 +10,7 @@ class MasterDepartement extends Model
     use HasFactory;
     protected $connection= 'rdlogin';
     protected $table = 'masterdepartmen';
-    protected $primaryKey = 'DepartemenCode';
+    protected $primaryKey = 'DepartmenCode';
     public $incrementing = false;
     protected $keyType = 'string';
     public $timestamps = false;
@@ -18,6 +18,6 @@ class MasterDepartement extends Model
     // const UPDATED_AT = 'modify_at';
     public function login_departement()
     {
-        $this->hasMany(LoginDepartement::class);
+        $this->hasMany(LoginDepartement::class,'DepartmenCode','DepartmenCode');
     }
 }
