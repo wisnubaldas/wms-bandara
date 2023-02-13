@@ -18,6 +18,6 @@ class MasterDepartement extends Model
     // const UPDATED_AT = 'modify_at';
     public function login_departement()
     {
-        $this->hasMany(LoginDepartement::class,'DepartmenCode','DepartmenCode');
+        return $this->hasMany(LoginDepartement::class,'DepartmenCode','DepartmenCode');
     }
 }
