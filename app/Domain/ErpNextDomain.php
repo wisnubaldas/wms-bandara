@@ -8,13 +8,24 @@ class ErpNextDomain
 {
 
     public $url = 'https://erp.ctos.inidev.xyz/api/method/ctoserp.ctoserp.invoiceCTOS';
+    public function response_handle($r)
+    {
+        if($r->successful()){
+            Log::debug($response->body());
+        }else {
+            $r->onError(function($callback)
+            {
+                Log::error($response->body());
+            })
+        }
+    }
     public function post_data($data)
     {
         if($data)
             foreach ($data as $v) {
                 $response = Http::post($this->url, $v);
+                $this->response_handle($response);
                 // dump($response->body());
-                Log::debug($response->body());
             }
     }
     static public function send($data)
