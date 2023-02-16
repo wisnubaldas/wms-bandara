@@ -18,7 +18,12 @@ class ContLoginController extends Controller
 		// })->first();
 		// return $dp;
 		// return LoginDepartement::first();
-		return MasterDepartement::with(['login_departement'])->get();
+		// return LoginDepartement::with('master_departement')->get();
+		$master = MasterDepartement::whereHas('login_departement',function(Builder $query){
+			$query->where('EmployeeNumber', '=', '138877');
+		});
+		dump($master);
+
 		// $listhasil = $this->login_model->list_logindepartmen($EmployeeNumber);
 		// // menjadikan objek menjadi JSON
 		// $hasil = json_encode($listhasil);

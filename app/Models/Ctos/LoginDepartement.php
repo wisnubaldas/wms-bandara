@@ -18,6 +18,6 @@ class LoginDepartement extends Model
     // const UPDATED_AT = 'modify_at';
     public function master_departement()
     {
-         return $this->belongsTo(MasterDepartement::class, 'DepartmenCode','DepartmenCode');
+         return $this->hasOne(MasterDepartement::class, 'DepartmenCode','DepartmenCode');
     }
 }
