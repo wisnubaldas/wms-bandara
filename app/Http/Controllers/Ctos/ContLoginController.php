@@ -11,33 +11,11 @@ class ContLoginController extends Controller
 {
     public function get_list_logindepartmen($EmployeeNumber)
 	{
-		// dd($EmployeeNumber);
-		// $dp = MasterDepartement::whereHas('login_departement',function(Builder $query)
-		// {
-		// 	$query->where('EmployeeNumber','138877');
-		// })->first();
-		// return $dp;
-		// return LoginDepartement::first();
-		// return LoginDepartement::with('master_departement')->get();
-		$master = MasterDepartement::whereHas('login_departement',function(Builder $query){
-			$query->where('EmployeeNumber', '=', '138877');
-		});
-		dump($master);
-
-		// $listhasil = $this->login_model->list_logindepartmen($EmployeeNumber);
-		// // menjadikan objek menjadi JSON
-		// $hasil = json_encode($listhasil);
-		
-		// // mengeluarkan JSON ke browser
-		// header('HTTP/1.1: 200');
-		// header('Status: 200');
-		// header('Content-Length: '.strlen($hasil));
-        // exit($hasil);
+		return LoginDepartement::with('master_departement')
+				->where('EmployeeNumber', '=', $EmployeeNumber)
+				->get();
 	}
-	public function test($EmployeeNumber)
-	{
-		echo 'hello';
-	}
+	
 	// ambil data untuk data user
 	public function get_list_loginTPS($EmployeeNumber)
 	{
