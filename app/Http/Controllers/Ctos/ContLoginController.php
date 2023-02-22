@@ -6,28 +6,33 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Ctos\MasterDepartement;
 use App\Models\Ctos\LoginDepartement;
+use App\Models\Ctos\LoginTps;
 use Illuminate\Database\Eloquent\Builder;
+use App\Http\Resources\Ctos\ContLoginResource;
 class ContLoginController extends Controller
 {
     public function get_list_logindepartmen($EmployeeNumber)
 	{
-		return LoginDepartement::with('master_departement')
-				->where('EmployeeNumber', '=', $EmployeeNumber)
-				->get();
+		$data = LoginDepartement::with('master_departement')
+				->where('EmployeeNumber', '=', $EmployeeNumber)->get();
+		$data->append(['team', 'is_admin']);
+		$data->is_admin = 'wqweqweqwe';
+		return ContLoginResource::collection($data);
 	}
 	
 	// ambil data untuk data user
 	public function get_list_loginTPS($EmployeeNumber)
 	{
-		$listhasil = $this->login_model->list_loginTPS($EmployeeNumber);
-		// menjadikan objek menjadi JSON
-		$hasil = json_encode($listhasil);
+		return LoginTps::with('master_tps')->limit(10)->get();
+		// $listhasil = $this->login_model->list_loginTPS($EmployeeNumber);
+		// // menjadikan objek menjadi JSON
+		// $hasil = json_encode($listhasil);
 		
-		// mengeluarkan JSON ke browser
-		header('HTTP/1.1: 200');
-		header('Status: 200');
-		header('Content-Length: '.strlen($hasil));
-        exit($hasil);
+		// // mengeluarkan JSON ke browser
+		// header('HTTP/1.1: 200');
+		// header('Status: 200');
+		// header('Content-Length: '.strlen($hasil));
+        // exit($hasil);
 	}
 	
 	public function get_login_database($EmployeeNumber,$TPScode=null,$DepartmenCode=null)
