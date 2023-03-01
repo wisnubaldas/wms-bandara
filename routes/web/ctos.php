@@ -10,5 +10,7 @@ Route::middleware('auth:sanctum')->group(function()
     Route::controller(ContLoginController::class)->group(function () {
         Route::get('Cont_Login/get_list_logindepartmen/{employNumber}', 'get_list_logindepartmen');
         Route::get('Cont_Login/get_list_loginTPS/{employNumber}', 'get_list_loginTPS');
+        Route::get('Cont_Login/get_login_database/{employNumber}/{TPScode?}/{DepartmenCode?}', 'get_login_database');
+
     });
 });

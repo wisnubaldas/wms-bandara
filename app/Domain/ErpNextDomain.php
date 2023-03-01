@@ -16,7 +16,7 @@ class ErpNextDomain
             $r->onError(function($callback)
             {
                 Log::error($response->body());
-            })
+            });
         }
     }
     public function post_data($data)

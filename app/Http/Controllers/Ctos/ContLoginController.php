@@ -15,16 +15,23 @@ class ContLoginController extends Controller
 	{
 		$data = LoginDepartement::with('master_departement')
 				->where('EmployeeNumber', '=', $EmployeeNumber)->get();
-		$data->append(['team', 'is_admin']);
-		$data->is_admin = 'wqweqweqwe';
-		return ContLoginResource::collection($data);
+		return ContLoginResource::collection($data)->toArray('get_list_logindepartmen');
 	}
 	
 	// ambil data untuk data user
 	public function get_list_loginTPS($EmployeeNumber)
 	{
-		return LoginTps::with('master_tps')->limit(10)->get();
-		// $listhasil = $this->login_model->list_loginTPS($EmployeeNumber);
+		$data = LoginTps::with('master_tps')
+				->where('EmployeeNumber', '=', $EmployeeNumber)
+				->get();
+		return ContLoginResource::collection($data)->toArray('get_list_loginTPS');
+	}
+	
+	public function get_login_database($EmployeeNumber,$TPScode=null,$DepartmenCode=null)
+	{
+		echo "hellooo.....";
+		
+		// $listhasil = $this->login_model->login_database($EmployeeNumber,$TPScode,$DepartmenCode);
 		// // menjadikan objek menjadi JSON
 		// $hasil = json_encode($listhasil);
 		
@@ -33,19 +40,6 @@ class ContLoginController extends Controller
 		// header('Status: 200');
 		// header('Content-Length: '.strlen($hasil));
         // exit($hasil);
-	}
-	
-	public function get_login_database($EmployeeNumber,$TPScode=null,$DepartmenCode=null)
-	{
-		$listhasil = $this->login_model->login_database($EmployeeNumber,$TPScode,$DepartmenCode);
-		// menjadikan objek menjadi JSON
-		$hasil = json_encode($listhasil);
-		
-		// mengeluarkan JSON ke browser
-		header('HTTP/1.1: 200');
-		header('Status: 200');
-		header('Content-Length: '.strlen($hasil));
-        exit($hasil);
 	}
 	
 	public function get_login_password($userID)

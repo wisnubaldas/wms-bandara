@@ -16,14 +16,6 @@ class ContLoginResource extends JsonResource
      */
     public function toArray($request)
     {
-        dd($this->resource);
-
-        return [
-                'noid' => $this->noid,
-                'EmployeeNumber' => $this->EmployeeNumber,
-                'DepartmenCode' => $this->DepartmenCode,
-                'DepartmenName' => $this->master_departement->DepartmenName,
-                'CaptionForm' => $this->master_departement->CaptionForm,
-            ];
+        return $this->cek_request($request);
     }
 }
