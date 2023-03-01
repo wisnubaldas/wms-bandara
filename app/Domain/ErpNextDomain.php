@@ -15,7 +15,7 @@ class ErpNextDomain
         }else {
             $r->onError(function($callback)
             {
-                Log::error($r->body());
+                Log::error($callback);
             });
         }
     }
