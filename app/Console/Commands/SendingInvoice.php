@@ -12,7 +12,7 @@ class SendingInvoice extends Command
      *
      * @var string
      */
-    protected $signature = 'send:inv';
+    protected $signature = 'send:inv  {tgl?}';
 
     /**
      * The console command description.
@@ -28,6 +28,11 @@ class SendingInvoice extends Command
      */
     public function handle(SendingInvoiceUseCase $sending_inv)
     {
+        $tgl = $this->argument('tgl');
+        if ($tgl) {
+            
+        }
+
         $import = $sending_inv->import_invoice();
         $eksport = $sending_inv->eksport_invoice();
 

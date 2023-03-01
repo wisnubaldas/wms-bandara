@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Ctos\MasterDepartement;
 use App\Models\Ctos\LoginDepartement;
 use App\Models\Ctos\LoginTps;
+use App\Models\Ctos\LoginDatabase;
 use Illuminate\Database\Eloquent\Builder;
 use App\Http\Resources\Ctos\ContLoginResource;
 class ContLoginController extends Controller
@@ -29,17 +30,10 @@ class ContLoginController extends Controller
 	
 	public function get_login_database($EmployeeNumber,$TPScode=null,$DepartmenCode=null)
 	{
-		echo "hellooo.....";
-		
-		// $listhasil = $this->login_model->login_database($EmployeeNumber,$TPScode,$DepartmenCode);
-		// // menjadikan objek menjadi JSON
-		// $hasil = json_encode($listhasil);
-		
-		// // mengeluarkan JSON ke browser
-		// header('HTTP/1.1: 200');
-		// header('Status: 200');
-		// header('Content-Length: '.strlen($hasil));
-        // exit($hasil);
+		return LoginDatabase::where('EmployeeNumber', $EmployeeNumber)
+						->where('TPScode',$TPScode)
+						->where('DepartmenCode',$DepartmenCode)
+						->get();
 	}
 	
 	public function get_login_password($userID)
