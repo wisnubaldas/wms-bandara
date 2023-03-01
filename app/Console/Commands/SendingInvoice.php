@@ -36,7 +36,10 @@ class SendingInvoice extends Command
             $import = $sending_inv->import_invoice();
             $eksport = $sending_inv->eksport_invoice();
         }
-
+        dump($import);
+        dump($eksport);
+        exit();
+        
         ErpNextDomain::send($import['data']);
         ErpNextDomain::send($eksport['data']);
         return Command::SUCCESS;
