@@ -11,11 +11,11 @@ class ErpNextDomain
     public function response_handle($r)
     {
         if($r->successful()){
-            Log::debug($response->body());
+            Log::debug($r->body());
         }else {
             $r->onError(function($callback)
             {
-                Log::error($response->body());
+                Log::error($r->body());
             });
         }
     }
