@@ -85,11 +85,11 @@ class InvoiceErpTransformer extends TransformerAbstract
             'AGREEMENT'=> "BASIC",
             'EDC_FEE'=>0,
             'EDC_NAME'=>0,
-            'CUSTOMER_NAME'=>'TES',
-            'CUSTOMER_ADDRESS'=>'ANY',
-            'CUSTOMER_NPWP_NIK'=>'ANY',
-            'COMPANY_CODE'=>'ANY',
-            'AIRPORT_CONTRIBUTION_FEE'=>'ANY',
+            'CUSTOMER_NAME'=>(string)$model->customer->CompanyName,
+            'CUSTOMER_ADDRESS'=>(string)$model->customer->Address1,
+            'CUSTOMER_NPWP_NIK'=>(string)$model->customer->NPWPNumber,
+            'COMPANY_CODE'=>(string)$model->customer->CustomerCode,
+            'AIRPORT_CONTRIBUTION_FEE'=>0,
             'VOID' => (boolean)$model->void,
         ];
     }
