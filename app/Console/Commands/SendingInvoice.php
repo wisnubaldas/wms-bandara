@@ -30,11 +30,12 @@ class SendingInvoice extends Command
     {
         $tgl = $this->argument('tgl');
         if ($tgl) {
-            
+            $import = $sending_inv->import_invoice($tgl);
+            $eksport = $sending_inv->eksport_invoice($tgl);
+        }else{
+            $import = $sending_inv->import_invoice();
+            $eksport = $sending_inv->eksport_invoice();
         }
-
-        $import = $sending_inv->import_invoice();
-        $eksport = $sending_inv->eksport_invoice();
 
         ErpNextDomain::send($import['data']);
         ErpNextDomain::send($eksport['data']);
