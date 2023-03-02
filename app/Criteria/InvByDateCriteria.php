@@ -33,6 +33,7 @@ class InvByDateCriteria implements CriteriaInterface
     private function create_date()
     {
         $date = Carbon::now();
+        dump($date);
         $this->tanggal = $date->format('Y-m-d');
         $this->start = $date->subMinutes(5)->format('H:i');
         $this->end = $date->format('H:i');
