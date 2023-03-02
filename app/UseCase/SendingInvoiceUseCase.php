@@ -32,7 +32,7 @@ class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
             return $this->repository
                 ->with(['detail'=>function($q){
                     return $q->with(['do']);
-                }])->where('DateOfTransaction',$date)->get();
+                }])->all();
 
         }else {
             // ini criteria kalo mau tarik data by date
