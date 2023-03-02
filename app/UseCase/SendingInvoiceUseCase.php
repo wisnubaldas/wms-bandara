@@ -32,7 +32,7 @@ class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
             return $this->repository
                 ->with(['detail'=>function($q){
                     return $q->with(['do']);
-                }])->where('DateOfTransaction',$date)->get();
+                }])->where('DateOfTransaction',$date)->all();
 
         }else {
             // ini criteria kalo mau tarik data by date
@@ -49,7 +49,7 @@ class SendingInvoiceUseCase implements SendingInvoiceUseCaseInterface
         $this->eksport->setPresenter("App\\Presenters\\EksInvoiceHeaderPresenter");
         $this->eksport->pushCriteria(EksInvoiceHeaderCriteria::class);
         if($date){
-            return $this->eksport->where('DateOfTransaction',$date)->get();
+            return $this->eksport->where('DateOfTransaction',$date)->all();
         }else{
              $this->eksport->pushCriteria(InvByDateCriteria::class);
             return $this->eksport->all();
