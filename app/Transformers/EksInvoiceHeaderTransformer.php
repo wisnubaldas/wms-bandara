@@ -21,7 +21,7 @@ class EksInvoiceHeaderTransformer extends TransformerAbstract
                     }
                 break;
             case 2:
-                if($props->detail->relationLoaded($cekNya[0])){
+                if($props->detail->relationLoaded($cekNya[1])){
                     if($props->detail->{$cekNya[0]}->relationLoaded($cekNya[1])){
                         return $props->detail->weighing->dtl_weigh;
                     }
