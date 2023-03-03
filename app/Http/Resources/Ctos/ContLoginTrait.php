@@ -8,6 +8,7 @@ trait ContLoginTrait
 {
     public function cek_request($method)
     {
+        
         switch ($method) {
             case 'get_list_logindepartmen':
                 return $this->get_list_logindepartmen();
@@ -15,10 +16,26 @@ trait ContLoginTrait
             case 'get_list_loginTPS':
                 return $this->get_list_loginTPS();
                 break;
+            case 'get_login_database':
+                return $this->get_login_database();
+                break;
             default:
                 return $this->resource;
                 break;
         }
+    }
+    public function get_login_database()
+    {
+        return [
+            "Noid" => $this->Noid,
+            "userID" => $this->userID,
+            "DatabaseName" => $this->DatabaseName,
+            "EmployeeNumber" => $this->EmployeeNumber,
+            "DatabaseCode" => $this->DatabaseCode,
+            "TPScode" => $this->TPScode,
+            "DepartmenCode" => $this->DepartmenCode,
+            "void" => $this->void
+        ];
     }
     public function get_list_loginTPS()
     {
