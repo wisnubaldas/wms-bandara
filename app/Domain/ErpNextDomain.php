@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Log;
 class ErpNextDomain
 {
 
-    public $url = 'https://erp.ctos.inidev.xyz/api/method/ctoserp.ctoserp.invoiceCTOS';
+    public $url = 'https://mai.erp-next.id/api/method/ctoserp.ctoserp.invoiceCTOS';
     public function response_handle($r)
     {
         if($r->successful()){
