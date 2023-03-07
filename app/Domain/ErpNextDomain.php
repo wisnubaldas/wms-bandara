@@ -25,8 +25,10 @@ class ErpNextDomain
             foreach ($data as $v) {
 
                 $response = Http::post($this->url, $v);
+                echo $response->status();
+                
                 $this->response_handle($response);
-                Log::info($v);
+                Log::info($v['NO_INVOICE'],$v);
                 // dump($response->body());
             }
     }

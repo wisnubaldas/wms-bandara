@@ -4,7 +4,7 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-
+use Carbon/Carbon;
 class Kernel extends ConsoleKernel
 {
     /**
@@ -15,7 +15,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('send:inv')->everyFiveMinutes();
+        $tm = Carbon::now('Asia/Jakarta');
+        $schedule->command("send:inv {$tm->toDateString}")->dailyAt('23:30');
     }
 
     /**
