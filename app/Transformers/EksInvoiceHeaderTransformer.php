@@ -13,6 +13,13 @@ use App\Models\Warehouse\FareDirectory;
  */
 class EksInvoiceHeaderTransformer extends TransformerAbstract
 {
+    private function cek_customer($props,$customer)
+    {
+        if($props->detail->relationLoaded($customer)){
+            return $props->customer;
+        }
+        return null;
+    }
     private function cek($props,...$cekNya){
         switch (count($cekNya)) {
             case 1:
@@ -41,6 +48,7 @@ class EksInvoiceHeaderTransformer extends TransformerAbstract
     {
         $weighing = $this->cek($model,'weighing');
         $weighing_dtl = $this->cek($model,'weighing','dtl_weigh');
+        $customer = $this->cek_customer($model,'customer');
         return [
             'COMPANY' => env('APP_UNIT'),
             'CUSTUMER_CODE' => (string)$model->CustomerCode,
@@ -98,10 +106,10 @@ class EksInvoiceHeaderTransformer extends TransformerAbstract
             'AGREEMENT'=> (string)$model->AgreementCode,
             'EDC_FEE'=>0,
             'EDC_NAME'=>'ANY',
-            'CUSTOMER_NAME'=>(string)$model->customer->CompanyName,
-            'CUSTOMER_ADDRESS'=>(string)$model->customer->Address1,
-            'CUSTOMER_NPWP_NIK'=>(string)$model->customer->NPWPNumber,
-            'COMPANY_CODE'=>(string)$model->customer->CustomerCode,
+            'CUSTOMER_NAME'=>(string)$customer?$customer->CompanyName,
+            'CUSTOMER_ADDRESS'=>(string)$customer?$customer->Address1,
+            'CUSTOMER_NPWP_NIK'=>(string)$customer?$customer->NPWPNumber,
+            'COMPANY_CODE'=>(string)$customer?$customer->CustomerCode,
             'AIRPORT_CONTRIBUTION_FEE'=>0,
             'VOID' => (boolean)$model->void,
         ];

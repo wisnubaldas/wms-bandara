@@ -12,12 +12,20 @@ use App\Models\Warehouse\FareDirectory;
  */
 class InvoiceErpTransformer extends TransformerAbstract
 {
+     private function cek_customer($props,$customer)
+    {
+        if($props->detail->relationLoaded($customer)){
+            return $props->customer;
+        }
+        return null;
+    }
+
     private function cek($obj)
     {
         if(property_exists($obj)){
             return $obj;
         }
-        return '';
+        return null;
     }
     /**
      * Transform the InvoiceErp entity.
@@ -26,8 +34,11 @@ class InvoiceErpTransformer extends TransformerAbstract
      *
      * @return array
      */
+    
     public function transform(ImpInvoiceheader $model)
     {
+        $customer = $this->cek_customer($model,'customer');
+
         return [
             'COMPANY' => env('APP_UNIT'),
             'CUSTUMER_CODE' => (string)$model->CustomerCode,
@@ -85,10 +96,10 @@ class InvoiceErpTransformer extends TransformerAbstract
             'AGREEMENT'=> "BASIC",
             'EDC_FEE'=>0,
             'EDC_NAME'=>0,
-            'CUSTOMER_NAME'=>(string)$model->customer->CompanyName,
-            'CUSTOMER_ADDRESS'=>(string)$model->customer->Address1,
-            'CUSTOMER_NPWP_NIK'=>(string)$model->customer->NPWPNumber,
-            'COMPANY_CODE'=>(string)$model->customer->CustomerCode,
+            'CUSTOMER_NAME'=>(string)$customer?$customer->CompanyName,
+            'CUSTOMER_ADDRESS'=>(string)$customer?$customer->Address1,
+            'CUSTOMER_NPWP_NIK'=>(string)$customer?$customer->NPWPNumber,
+            'COMPANY_CODE'=>(string)$customer?$customer->CustomerCode,
             'AIRPORT_CONTRIBUTION_FEE'=>0,
             'VOID' => (boolean)$model->void,
         ];
