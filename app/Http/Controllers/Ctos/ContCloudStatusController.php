@@ -46,20 +46,31 @@ class ContCloudStatusController extends Controller
         $this->outbound->limit(10);
         return $this->outbound->get();
     }
-    public function get_check_th_outbond_international($waybill_smu,$hawb=null)
-    {
-        # code...
-    }
+    
     public function get_check_th_inbound_domestik($waybill_smu,$hawb=null)
     {
-        # code...
+        $this->inbound->where('waybill_smu',$waybill_smu);
+        if($hawb){
+            $this->inbound->where('hawb',$hawb);
+        }
+        $this->inbound->limit(10);
+        return $this->inbound->get();
     }
     public function get_check_th_outbond_domestik($waybill_smu,$hawb=null)
     {
-        # code...
+        $this->outbound->where('waybill_smu',$waybill_smu);
+        if($hawb){
+            $this->outbound->where('hawb',$hawb);
+        }
+        $this->outbound->limit(10);
+        return $this->outbound->get();
     }
     public function get_update_dinamis($namatable,$namafield,$isifield,$namacode,$nilaicode)
     {
-        # code...
+        $data = array(
+			$namafield => $isifield
+		);
+		$this->db30->where($namacode,$nilaicode);	
+		$this->db30->update($namatable,$data);
     }
 }
