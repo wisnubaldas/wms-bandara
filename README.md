@@ -4,4 +4,4 @@
 ################################################
 env key:
 
-``` Y74rRWH5gRI0XTuiKnhNCpCjYUl2XUEYOyC40hf9RLE= ```
+``` base64:YR84yhIAebnXTP+vdZvmmIkPdACKXk/IGpVxCjI9/vM= ```

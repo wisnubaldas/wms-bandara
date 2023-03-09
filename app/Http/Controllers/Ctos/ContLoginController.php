@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Ctos;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use App\Models\Ctos\MasterDepartement;
 use App\Models\Ctos\LoginDepartement;
 use App\Models\Ctos\LoginTps;
@@ -13,6 +14,7 @@ use App\Models\Ctos\LoginUser;
 use App\Models\Ctos\LoginPermission;
 use Illuminate\Database\Eloquent\Builder;
 use App\Http\Resources\Ctos\ContLoginResource;
+
 class ContLoginController extends Controller
 {
     public function get_list_logindepartmen($EmployeeNumber)
@@ -61,21 +63,17 @@ class ContLoginController extends Controller
 		return LoginUser::where('EmployeeName',$EmployeeName)->get();
 	}
 	
-	public function get_login_permission($EmployeeName=null,$databaseName=null,$JenisGudang=null)
+	public function get_login_permission($EmployeeNumber=null,$databaseName=null,$JenisGudang=null)
 	{
-		return LoginPermission::where();
+		$pre = new LoginPermission;
+			if(!is_null($EmployeeNumber))$pre->where('EmployeeNumber',$EmployeeNumber);	
+			if(!is_null($databaseName))$pre->where('databaseName',$databaseName);	
+			if(!is_null($JenisGudang))$pre->whereRaw("(JenisGudang='ALL' OR JenisGudang='".$JenisGudang."')");
+		return $pre->get();
 	}
 	
 	public function get_datetime_Server()
 	{
-		$listhasil = $this->login_model->datetime_Server();
-		// menjadikan objek menjadi JSON
-		$hasil = json_encode($listhasil);
-		
-		// mengeluarkan JSON ke browser
-		header('HTTP/1.1: 200');
-		header('Status: 200');
-		header('Content-Length: '.strlen($hasil));
-        exit($hasil);
+		return Carbon::create('Asia/Jakarta');
 	}
 }
