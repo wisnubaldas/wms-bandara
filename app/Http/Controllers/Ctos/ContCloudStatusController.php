@@ -46,4 +46,20 @@ class ContCloudStatusController extends Controller
         $this->outbound->limit(10);
         return $this->outbound->get();
     }
+    public function get_check_th_outbond_international($waybill_smu,$hawb=null)
+    {
+        # code...
+    }
+    public function get_check_th_inbound_domestik($waybill_smu,$hawb=null)
+    {
+        # code...
+    }
+    public function get_check_th_outbond_domestik($waybill_smu,$hawb=null)
+    {
+        # code...
+    }
+    public function get_update_dinamis($namatable,$namafield,$isifield,$namacode,$nilaicode)
+    {
+        # code...
+    }
 }
