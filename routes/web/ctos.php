@@ -7,6 +7,7 @@ use App\Http\Controllers\Ctos\ContLoginController;
 use App\Http\Controllers\Ctos\ContCloudStatusController;
 use App\Http\Controllers\Ctos\ContEksporController;
 use App\Http\Controllers\Ctos\ContFinanceController;
+use App\Http\Controllers\Ctos\ContFinddataController;
 
 
 Route::middleware('auth:sanctum')->group(function()
@@ -67,6 +68,12 @@ Route::middleware('auth:sanctum')->group(function()
             Route::get('/get_list_depositnominal/{DepositCode}/{WarehouseCode?}', 'get_list_depositnominal');
             Route::get('/get_list_depositor/{udepositor?}', 'get_list_depositor');
             Route::get('/get_nomor_tax/{warehouse_npwp}', 'get_nomor_tax');
+        });
+    });
+    Route::prefix('Cont_Finddata')->group(function () {
+        Route::controller(ContFinddataController::class)->group(function () {
+            Route::get('/get_list_master_breakdowndetail/{token}/{MasterAWB?}', 'get_list_master_breakdowndetail');
+            
         });
     });
 });

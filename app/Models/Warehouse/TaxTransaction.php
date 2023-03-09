@@ -14,4 +14,8 @@ class TaxTransaction extends Model
     // public $incrementing = false;
     // protected $keyType = 'string';
     public $timestamps = false;
+    public function imp_invoice_d()
+    {
+        return $this->hasOne(ImpInvoicedetail::class,'InvoiceNumber','InvoiceNumber');
+    }
 }

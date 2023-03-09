@@ -67,14 +67,12 @@ class ContFinanceController extends Controller
 	
 	public function get_list_pajakBydate($token,$DateFrom,$DateUntil)
 	{
-		$this->db7->distinct();
-		$this->db7->select("a.*,b.HostMAWB");
-		$this->db7->from('tax_transaction a');
-		$this->db7->join('imp_invoicedetail b','b.InvoiceNumber = a.InvoiceNumber','inner');
-		$this->db7->where('a.token',$token);
-		$this->db7->where("DateOfFaktur >='".URLDECODE($DateFrom)."' AND DateOfFaktur  <='".URLDECODE($DateUntil)."'");
-		$this->db7->where('a.void=0');
-		$query_1 = $this->db7->get_compiled_select();
+
+		$this->tax_transact->with('imp_invoice_d');
+		$this->tax_transact->where('token',$token);
+		$this->tax_transact->whereRaw("DateOfFaktur >='".URLDECODE($DateFrom)."' AND DateOfFaktur  <='".URLDECODE($DateUntil)."'");
+		$this->db7->where('void',0);
+		$query_1 = $this->db7->get();
 		
 		$this->db7->distinct();
 		$this->db7->select('a.*,b.ProofNumber AS HostMAWB ');
