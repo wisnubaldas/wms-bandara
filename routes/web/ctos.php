@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Ctos\ContLoginController;
 use App\Http\Controllers\Ctos\ContCloudStatusController;
 use App\Http\Controllers\Ctos\ContEksporController;
+use App\Http\Controllers\Ctos\ContFinanceController;
 
 
 Route::middleware('auth:sanctum')->group(function()
@@ -47,8 +48,25 @@ Route::middleware('auth:sanctum')->group(function()
             Route::get('/get_list_eks_weighingheader/{token}/{ProofNumber?}', 'get_list_eks_weighingheader');
             Route::get('/get_list_eks_weighingdetail/{token}/{ProofNumber?}', 'get_list_eks_weighingdetail');
             Route::get('/get_list_eks_weighingvol/{token}/{ProofNumber?}', 'get_list_eks_weighingvol');
-            
         });
     });
-
+    Route::prefix('Cont_finance')->group(function () {
+        Route::controller(ContFinanceController::class)->group(function () {
+            Route::get('/get_drsc_import/{shifname}/{dateDRSC}/{PaymentCode}/{token}', 'get_drsc_import');
+            Route::get('/get_drsc_ekspor/{shifname}/{dateDRSC}/{PaymentCode}/{token}', 'get_drsc_ekspor');
+            Route::get('/get_list_basicprice/{LocationCode}/{WarehouseCode}/{AgreementCode}/{Datetransaction}/{totOverstay}', 'get_list_basicprice');
+            Route::get('/get_list_aggrement/{WarehouseCode}/{DatabaseCode}{kd_gudang}', 'get_list_aggrement');
+            Route::get('/list_fare_directory/{WarehouseCode}/{AgreementCode}', 'list_fare_directory');
+            Route::get('/get_list_pajakBynumber/{token}/{TaxAwal}/{TaxAkhir}', 'get_list_pajakBynumber');
+            Route::get('/get_list_pajakBydate/{token}/{DateFrom}/{DateUntil}', 'get_list_pajakBydate');
+            Route::get('/get_totalfaktur/{warehouse_npwp}', 'get_totalfaktur');
+            Route::get('/get_deposit_invoice/{InvoiceNumber}', 'get_deposit_invoice');
+            Route::get('/get_list_depositheader/{DepositCode}', 'get_list_depositheader');
+            Route::get('/get_list_depositdetail/{WarehouseCode}/{DepositCode}/{firstdate}/{lastdate}', 'get_list_depositdetail');
+            Route::get('/get_Summary_deposit/{WarehouseCode}/{DepositCode}/{firstdate}', 'get_Summary_deposit');
+            Route::get('/get_list_depositnominal/{DepositCode}/{WarehouseCode?}', 'get_list_depositnominal');
+            Route::get('/get_list_depositor/{udepositor?}', 'get_list_depositor');
+            Route::get('/get_nomor_tax/{warehouse_npwp}', 'get_nomor_tax');
+        });
+    });
 });
