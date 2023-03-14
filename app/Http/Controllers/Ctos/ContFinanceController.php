@@ -8,12 +8,20 @@ use DB;
 use App\Models\FareDirectory;
 use App\Models\FareAgree;
 use App\Models\TaxTransaction;
+use App\Models\MstTax;
+use App\Models\MstDepositDetail;
+use App\Models\MstDepositHeader;
+use App\Models\MstDepositNominal;
 class ContFinanceController extends Controller
 {
     public function __construct() {
         $this->fare_directory = FareDirectory::class;
         $this->fare_agree = FareAgree::class;
         $this->tax_transact = TaxTransaction::class;
+		$this->mst_tax = MstTax::class;
+		$this->mst_deposit_d = MstDepositDetail::class;
+		$this->mst_deposit_h = MstDepositHeader::class;
+		$this->mst_deposit_nominal = MstDepositNominal::class;
     }
     public function get_drsc_import($shifname,$dateDRSC,$PaymentCode,$token)
 	{
@@ -89,48 +97,48 @@ class ContFinanceController extends Controller
 	
 	public function get_totalfaktur($warehouse_npwp)
 	{
-        $this->db7->select('COUNT(noid) AS totalnumber');
-		$this->db7->where('void=0');
-		$this->db7->where('warehouse_npwp',$warehouse_npwp);
-		$this->db7->where("invoicenumber IS NULL or invoicenumber =''");
-		$query = $this->db7->get('mst_tax');
+        $this->mst_tax->selectRaw('COUNT(noid) AS totalnumber');
+		$this->mst_tax->where('void',0);
+		$this->mst_tax->where('warehouse_npwp',$warehouse_npwp);
+		$this->mst_tax->whereRaw("invoicenumber IS NULL or invoicenumber =''");
+		return $this->mst_tax->get();
 	}
 	
 	public function get_deposit_invoice($InvoiceNumber)
 	{
-		$this->db7->where('InvoiceNumber=',$InvoiceNumber);
-		$query = $this->db7->get('mst_depositdetail');
+		$this->mst_deposit_d->where('InvoiceNumber',$InvoiceNumber);
+		return $this->mst_deposit_d->get();
 	}
 	
 	public function get_list_depositheader($DepositCode)
 	{
-		$this->db7->where('DepositCode=',$DepositCode);
-		$query = $this->db7->get('mst_depositheader');
+		$this->mst_deposit_h->where('DepositCode',$DepositCode);
+		return $this->mst_deposit_h->get();
 		
 	}
 	
 	public function get_list_depositdetail($WarehouseCode,$DepositCode,$firstdate,$lastdate)
 	{
-		$this->db7->where('WarehouseCode=',$WarehouseCode);
-		$this->db7->where('DepositCode=',$DepositCode);
-		$this->db7->where('DateOfTransaction>=',$firstdate);
-		$this->db7->where('DateOfTransaction<=',$lastdate);
-		$this->db7->order_by('DateOfTransaction');
-		$this->db7->order_by('TimeOfTransaction');
-		$query = $this->db7->get('mst_depositdetail');
+		$this->mst_deposit_d->where('WarehouseCode=',$WarehouseCode);
+		$this->mst_deposit_d->where('DepositCode=',$DepositCode);
+		$this->mst_deposit_d->where('DateOfTransaction>=',$firstdate);
+		$this->mst_deposit_d->where('DateOfTransaction<=',$lastdate);
+		$this->mst_deposit_d->order_by('DateOfTransaction');
+		$this->mst_deposit_d->order_by('TimeOfTransaction');
+		return  $this->mst_deposit_d->get();
 		
 	}
 	public function get_Summary_deposit($WarehouseCode,$DepositCode,$firstdate)
 	{
-		$query=$this->db7->query("CALL Get_data_deposit('".$DepositCode."','".$WarehouseCode."','".$firstdate."')");
+		return DB::connection("rdwarehouse_jkt")->select("CALL Get_data_deposit('".$DepositCode."','".$WarehouseCode."','".$firstdate."')");
 	}
 	
 	public function get_list_depositnominal($DepositCode,$WarehouseCode=null)
 	{
-		if(!is_null($WarehouseCode))$this->db7->where('WarehouseCode',$WarehouseCode);
-		$this->db7->where('WarehouseCode=',$WarehouseCode);
-		$this->db7->where('DepositCode=',$DepositCode);
-		$query = $this->db7->get('mst_depositnominal');
+		if(!is_null($WarehouseCode))$this->mst_deposit_nominal->where('WarehouseCode',$WarehouseCode);
+		$this->mst_deposit_nominal->where('WarehouseCode=',$WarehouseCode);
+		$this->mst_deposit_nominal->where('DepositCode=',$DepositCode);
+		return $this->mst_deposit_nominal->get();
 	}
 	
 	public function get_list_depositor($udepositor=null)
