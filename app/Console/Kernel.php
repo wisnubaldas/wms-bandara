@@ -15,8 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $tm = Carbon::now('Asia/Jakarta');
-        $schedule->command("send:inv ".$tm->toDateString())->dailyAt('23:59');
+        $schedule->command("send:inv")->hourly();
     }
 
     /**

@@ -26,21 +26,23 @@ class SendingInvoice extends Command
      *
      * @return int
      */
-    public function handle(SendingInvoiceUseCase $sending_inv)
+    public function handle()
     {
-        $tgl = $this->argument('tgl');
-        if ($tgl) {
-            $import = $sending_inv->import_invoice($tgl);
-            $eksport = $sending_inv->eksport_invoice($tgl);
-            ErpNextDomain::send($eksport['data']);
-            ErpNextDomain::send($import['data']);
-        }else{
-            $import = $sending_inv->import_invoice();
-            $eksport = $sending_inv->eksport_invoice();
-            ErpNextDomain::send($import['data']);
-            ErpNextDomain::send($eksport['data']);
+        ErpNextDomain::send();
 
-        }
+        // $tgl = $this->argument('tgl');
+        // if ($tgl) {
+        //     $import = $sending_inv->import_invoice($tgl);
+        //     $eksport = $sending_inv->eksport_invoice($tgl);
+        //     ErpNextDomain::send($eksport['data']);
+        //     ErpNextDomain::send($import['data']);
+        // }else{
+        //     $import = $sending_inv->import_invoice();
+        //     $eksport = $sending_inv->eksport_invoice();
+        //     ErpNextDomain::send($import['data']);
+        //     ErpNextDomain::send($eksport['data']);
+
+        // }
         return Command::SUCCESS;
     }
 }

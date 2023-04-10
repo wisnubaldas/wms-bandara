@@ -11,13 +11,6 @@
             "options": {
                 "symlink": true
             }
-        },
-        {
-            "type":"path",
-            "url":"package/wisnubaldas/ctos",
-            "options":{
-                "symlink":true
-            }
         }
     ],
     "require": {
@@ -29,8 +22,7 @@
         "laravel/tinker": "^2.7",
         "league/fractal": "^0.20.1",
         "rap2hpoutre/laravel-log-viewer": "^2.3",
-        "wisnubaldas/baldas-module": "@dev",
-        "wisnubaldas/ctos": "@dev"
+        "wisnubaldas/baldas-module": "@dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -40,8 +32,7 @@
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0",
-        "wisnubaldas/baldas-module":"@dev",
-        "wisnubaldas/ctos":"@dev"
+        "wisnubaldas/baldas-module":"@dev"
     },
     "autoload": {
         "psr-4": {

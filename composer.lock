@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3687dcdd5e1f84f3df43d84c63b2a123",
+    "content-hash": "3cd29adae50a3fc74a44a24f01386558",
     "packages": [
         {
             "name": "brick/math",
@@ -1118,16 +1118,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.4.3",
+            "version": "2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "67c26b443f348a51926030c83481b85718457d3d"
+                "reference": "3cf1b6d4f0c820a2cf8bcaec39fc698f3443b5cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/67c26b443f348a51926030c83481b85718457d3d",
-                "reference": "67c26b443f348a51926030c83481b85718457d3d",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/3cf1b6d4f0c820a2cf8bcaec39fc698f3443b5cf",
+                "reference": "3cf1b6d4f0c820a2cf8bcaec39fc698f3443b5cf",
                 "shasum": ""
             },
             "require": {
@@ -1217,7 +1217,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.4.3"
+                "source": "https://github.com/guzzle/psr7/tree/2.4.4"
             },
             "funding": [
                 {
@@ -1233,7 +1233,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-26T14:07:24+00:00"
+            "time": "2023-03-09T13:19:02+00:00"
         },
         {
             "name": "guzzlehttp/uri-template",
@@ -6052,17 +6052,11 @@
         },
         {
             "name": "wisnubaldas/baldas-module",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wisnubaldas/baldas-module.git",
-                "reference": "9347b3f31c618a2c6feabd5547d699a873250d29"
-            },
+            "version": "dev-master",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wisnubaldas/baldas-module/zipball/9347b3f31c618a2c6feabd5547d699a873250d29",
-                "reference": "9347b3f31c618a2c6feabd5547d699a873250d29",
-                "shasum": ""
+                "type": "path",
+                "url": "package/wisnubaldas/baldas-module",
+                "reference": "9376a87d8ae9eed7baa745647add37d78687d3d0"
             },
             "require": {
                 "laravel/sanctum": "^3.1",
@@ -6089,7 +6083,6 @@
                     "Wisnubaldas\\BaldasModule\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6100,48 +6093,6 @@
                 }
             ],
             "description": "Module laravel",
-            "support": {
-                "issues": "https://github.com/wisnubaldas/baldas-module/issues",
-                "source": "https://github.com/wisnubaldas/baldas-module/tree/1.2"
-            },
-            "time": "2023-02-10T10:23:45+00:00"
-        },
-        {
-            "name": "wisnubaldas/ctos",
-            "version": "dev-development",
-            "dist": {
-                "type": "path",
-                "url": "package/wisnubaldas/ctos",
-                "reference": "98d800d0b3f3480c57c3b1b1362545909a535366"
-            },
-            "require": {
-                "laravel/sanctum": "^3.1",
-                "php": "^8.0.2",
-                "prettus/l5-repository": "^2.8"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Wisnubaldas\\Ctos\\MainServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Wisnubaldas\\Ctos\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Wisnu Hidayat",
-                    "email": "wisnubaldas@gmail.com"
-                }
-            ],
-            "description": "ctos v1",
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -7190,16 +7141,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.4",
+            "version": "9.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9125ee085b6d95e78277dc07aa1f46f9e0607b8d"
+                "reference": "86e761949019ae83f49240b2f2123fb5ab3b2fc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9125ee085b6d95e78277dc07aa1f46f9e0607b8d",
-                "reference": "9125ee085b6d95e78277dc07aa1f46f9e0607b8d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/86e761949019ae83f49240b2f2123fb5ab3b2fc5",
+                "reference": "86e761949019ae83f49240b2f2123fb5ab3b2fc5",
                 "shasum": ""
             },
             "require": {
@@ -7232,8 +7183,8 @@
                 "sebastian/version": "^3.0.2"
             },
             "suggest": {
-                "ext-soap": "*",
-                "ext-xdebug": "*"
+                "ext-soap": "To be able to generate mocks based on WSDL files",
+                "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
             "bin": [
                 "phpunit"
@@ -7272,7 +7223,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.4"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.5"
             },
             "funding": [
                 {
@@ -7288,7 +7239,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-27T13:06:37+00:00"
+            "time": "2023-03-09T06:34:10+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -8677,8 +8628,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "wisnubaldas/baldas-module": 20,
-        "wisnubaldas/ctos": 20
+        "wisnubaldas/baldas-module": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -4,20 +4,14 @@ namespace App\Http\Controllers\Ctos;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use App\Models\Tps\MKdDokInout;
 class ContGateController extends Controller
 {
     public function get_keterangan_dokumen($nilai) 
 	{
-		$listhasil = $this->gate_model->keterangan_dokumen($nilai);
-		// menjadikan objek menjadi JSON
-		$hasil = json_encode($listhasil);		
-		// mengeluarkan JSON ke browserq
-		header('HTTP/1.1: 200');
-		header('Status: 200');
-		header('Content-Length: '.strlen($hasil));
-        exit($hasil);
-		
+		return MKdDokInout::distinct()
+			->where('nilai', $nilai)
+			->first();		
 	}
 	
 	public function get_dokumen_gudang_out($NO_BL_AWB)
