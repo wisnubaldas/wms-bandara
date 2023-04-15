@@ -39,6 +39,10 @@ class ErpNextDomain
         $tanggal = $dt->toDateString();
         $end_date = $dt->toTimeString();
         $start_date = $dt->subHour(1)->toTimeString();
+        
+        // $tanggal = '2022-01-02';
+        // $end_date = '14:04:41';
+        // $start_date = '03:46:10';
 
         $run = new ErpNextDomain;
         $import = $run->imp_pros($tanggal, $start_date, $end_date);
@@ -48,13 +52,16 @@ class ErpNextDomain
         $dataSend = $run->schemax($export,'E');
         $run->post_data($dataSend);
     }
+
     protected function schemax($data,$INC_OUT)
     {
         $result = [];
         foreach ($data as $v) {
+           
+
             $datax = [
                     'COMPANY' => env('APP_UNIT'),
-                    'CUSTUMER_CODE' => $v->CustomerCode,
+                    'CUSTUMER_CODE' => $this->check_custm($v->CustomerCode),
                     'NO_INVOICE' =>  $v->InvoiceNumber,
                     'TANGGAL' => $v->DateOfTransaction.' '.$v->TimeOfTransaction,
                     'PAYMENT_CODE' => $v->PaymentCode,
@@ -117,6 +124,7 @@ class ErpNextDomain
                     'VOID' => (boolean)$v->void,
             ];
             array_push($result, (object) $datax);
+            // dump($datax);
         }
         return $result;
     }
@@ -129,5 +137,14 @@ class ErpNextDomain
     {
         return DB::connection('rdwarehouse_jkt')
                 ->select('CALL send_invoice_imp(?,?,?)',array($tanggal,$start_date,$end_date));
+    }
+    protected function check_custm($cust)
+    {
+        if($cust){
+            $cus = explode('.', $cust);
+            unset($cus[0]);
+            // berarti di define yg CGK, BDO, sama AAP dulu aja bang
+            return 'CGK/' . implode('/', $cus);
+        }
     }
 }
