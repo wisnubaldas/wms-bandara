@@ -40,14 +40,19 @@ class ErpNextDomain
         $end_date = $dt->toTimeString();
         $start_date = $dt->subHour(1)->toTimeString();
         
-        // $tanggal = '2022-01-02';
-        // $end_date = '14:04:41';
-        // $start_date = '03:46:10';
+        // $tanggal = '2022-11-01';
+        // $end_date = '17:54:18';
+        // $start_date = '17:51:08';
 
         $run = new ErpNextDomain;
+        $exp_pcp = $run->exp_pcp($tanggal, $start_date, $end_date);
+        $dataSend = $run->schemax($exp_pcp,'E');
+        $run->post_data($dataSend);
+        
         $import = $run->imp_pros($tanggal, $start_date, $end_date);
         $dataSend = $run->schemax($import,'I');
         $run->post_data($dataSend);
+
         $export = $run->exp_pros($tanggal, $start_date, $end_date);
         $dataSend = $run->schemax($export,'E');
         $run->post_data($dataSend);
@@ -127,6 +132,11 @@ class ErpNextDomain
             // dump($datax);
         }
         return $result;
+    }
+    public function exp_pcp($tanggal,$start_date,$end_date)
+    {
+        return DB::connection('rdwarehouse_jkt')
+                ->select('CALL send_inv_exp_pcp(?,?,?)',array($tanggal,$start_date,$end_date));
     }
     protected function exp_pros($tanggal,$start_date,$end_date)
     {
