@@ -8,30 +8,21 @@ class RepositoryServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
 
     /**
      * Bootstrap services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        $this->app->bind(
-            \App\Repositories\ImpInvoiceheaderRepository::class, 
-            \App\Repositories\ImpInvoiceheaderRepositoryEloquent::class
-        );
-        $this->app->bind(
-            \App\UseCase\SendingInvoiceUseCaseInterface::class, 
-            \App\UseCase\SendingInvoiceUseCase::class
-        );
-        $this->app->bind(\App\Repositories\EksInvoiceHeaderRepository::class, \App\Repositories\EksInvoiceHeaderRepositoryEloquent::class);
+        
+        $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstAirlinesRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstArrivalRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstBeacukaiRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstBeacukaiRepositoryEloquent::class);
         //:end-bindings:
     }
 }

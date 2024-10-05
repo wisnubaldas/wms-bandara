@@ -3,26 +3,25 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Facades\Gate;
+use Dedoc\Scramble\Scramble;
 class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
-     *
-     * @return void
      */
-    public function register()
+    public function register(): void
     {
-        //
+        Scramble::ignoreDefaultRoutes();
     }
 
     /**
      * Bootstrap any application services.
-     *
-     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
-        JsonResource::withoutWrapping();
+        Gate::define('viewApiDocs', function (User $user) {
+            return in_array($user->email, ['admin@app.com']);
+        });
     }
 }
