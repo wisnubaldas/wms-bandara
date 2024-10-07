@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the pod header.'
         required: true
-        example: possimus
+        example: neque
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: possimus
+      id: neque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the pod header.'
         required: true
-        example: unde
+        example: repellendus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: unde
+      id: repellendus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the pod header.'
         required: true
-        example: maxime
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: maxime
+      id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

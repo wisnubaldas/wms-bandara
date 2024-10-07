@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the ob detail.'
         required: true
-        example: laudantium
+        example: veritatis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: laudantium
+      id: veritatis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the ob detail.'
         required: true
-        example: dolores
+        example: quas
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dolores
+      id: quas
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the ob detail.'
         required: true
-        example: pariatur
+        example: quod
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: pariatur
+      id: quod
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

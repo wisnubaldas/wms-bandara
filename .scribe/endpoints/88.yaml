@@ -1,0 +1,214 @@
+name: WarehouseController
+description: |-
+
+  APIs for App\Http\Controllers\api\Mst\WarehouseController::class
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/mst/warehouse
+    metadata:
+      groupName: WarehouseController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\WarehouseController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET WarehouseController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/mst/warehouse
+    metadata:
+      groupName: WarehouseController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\WarehouseController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'POST WarehouseController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/mst/warehouse/{id}'
+    metadata:
+      groupName: WarehouseController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\WarehouseController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET WarehouseController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the warehouse.'
+        required: true
+        example: error
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: error
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/mst/warehouse/{id}'
+    metadata:
+      groupName: WarehouseController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\WarehouseController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'PUT, PATCH WarehouseController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the warehouse.'
+        required: true
+        example: qui
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: qui
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/mst/warehouse/{id}'
+    metadata:
+      groupName: WarehouseController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\WarehouseController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'DELETE WarehouseController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the warehouse.'
+        required: true
+        example: neque
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: neque
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

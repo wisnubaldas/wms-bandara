@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup header.'
         required: true
-        example: dolores
+        example: quidem
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dolores
+      id: quidem
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup header.'
         required: true
-        example: aut
+        example: exercitationem
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aut
+      id: exercitationem
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup header.'
         required: true
-        example: molestiae
+        example: nesciunt
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: molestiae
+      id: nesciunt
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

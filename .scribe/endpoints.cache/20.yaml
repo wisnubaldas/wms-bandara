@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the wh master.'
         required: true
-        example: aut
+        example: iusto
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aut
+      id: iusto
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the wh master.'
         required: true
-        example: corporis
+        example: assumenda
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: corporis
+      id: assumenda
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the wh master.'
         required: true
-        example: dignissimos
+        example: provident
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dignissimos
+      id: provident
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

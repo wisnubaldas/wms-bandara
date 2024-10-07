@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the sppb ecommer.'
         required: true
-        example: quia
+        example: ad
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quia
+      id: ad
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the sppb ecommer.'
         required: true
-        example: et
+        example: earum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: earum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the sppb ecommer.'
         required: true
-        example: blanditiis
+        example: alias
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: blanditiis
+      id: alias
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

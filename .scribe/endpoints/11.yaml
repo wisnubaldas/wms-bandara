@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the outgoing.'
         required: true
-        example: inventore
+        example: rerum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: inventore
+      id: rerum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the outgoing.'
         required: true
-        example: dolorem
+        example: quae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dolorem
+      id: quae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the outgoing.'
         required: true
-        example: ab
+        example: omnis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ab
+      id: omnis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

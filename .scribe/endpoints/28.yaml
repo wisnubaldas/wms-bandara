@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice detail.'
         required: true
-        example: qui
+        example: atque
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: qui
+      id: atque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice detail.'
         required: true
-        example: sed
+        example: voluptates
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: sed
+      id: voluptates
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice detail.'
         required: true
-        example: voluptatem
+        example: iste
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptatem
+      id: iste
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -308,13 +308,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice detail.'
         required: true
-        example: nam
+        example: molestiae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nam
+      id: molestiae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -360,13 +360,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice detail.'
         required: true
-        example: repellendus
+        example: quo
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: repellendus
+      id: quo
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -402,13 +402,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice detail.'
         required: true
-        example: et
+        example: natus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: natus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

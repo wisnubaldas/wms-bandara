@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup of load.'
         required: true
-        example: ullam
+        example: ut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ullam
+      id: ut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup of load.'
         required: true
-        example: quis
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quis
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup of load.'
         required: true
-        example: quidem
+        example: earum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quidem
+      id: earum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

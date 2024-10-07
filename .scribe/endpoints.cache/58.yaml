@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: numquam
+        example: neque
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: numquam
+      id: neque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: maxime
+        example: reiciendis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: maxime
+      id: reiciendis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,222 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: veniam
+        example: architecto
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: veniam
+      id: architecto
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/mst/location
+    metadata:
+      groupName: LocationController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\LocationController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET LocationController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/mst/location
+    metadata:
+      groupName: LocationController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\LocationController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'POST LocationController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/mst/location/{id}'
+    metadata:
+      groupName: LocationController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\LocationController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET LocationController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the location.'
+        required: true
+        example: fuga
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: fuga
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/mst/location/{id}'
+    metadata:
+      groupName: LocationController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\LocationController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'PUT, PATCH LocationController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the location.'
+        required: true
+        example: magnam
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: magnam
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/mst/location/{id}'
+    metadata:
+      groupName: LocationController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\LocationController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'DELETE LocationController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the location.'
+        required: true
+        example: quaerat
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: quaerat
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

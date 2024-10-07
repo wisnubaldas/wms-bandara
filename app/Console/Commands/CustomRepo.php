@@ -27,24 +27,56 @@ class CustomRepo extends Command
     public function handle()
     {
         $this->arg_name = $this->argument('name');
+        $ldConn = config('database.connections');
+        $Conn = $this->choice(
+            'Koneksi database yang di pake di model apa?',
+            array_keys($ldConn),
+            7
+        );
+        $tabels = \DB::connection($Conn)->select('SHOW TABLES');
+        $tabels = collect($tabels)->transform(function ($item, $key) {
+            return array_values((array) $item)[0];
+        })->toArray();
 
-        $this->info('Hello, Jing!!!');
+        $this->line('Koneksi ' . $Conn);
+        $tbl = $this->choice(
+            "Table yang dipake di model apa ?",
+            (array) $tabels
+        );
+        $this->line('Koneksi ' . $tbl);
         
+        dd($Conn,$tbl, $this->arg_name);
+
+        $this->info('Hello, Jing!!!.................');
+
         \Artisan::call(
             'make:repository',
-            array('name' =>  $this->arg_name,'--skip-model'=>true,'--skip-migration'=>true)
+            array('name' => $this->arg_name, '--skip-model' => true, '--skip-migration' => true)
         );
+        $this->info(\Artisan::output());
         \Artisan::call(
             'make:model',
-            array('name' =>  $this->arg_name)
+            array('name' => $this->arg_name)
         );
+        $this->info(\Artisan::output());
+
         \Artisan::call(
             'make:request',
-            array('name' =>  $this->arg_name)
+            array('name' => $this->arg_name . 'Request')
         );
+        $this->info(\Artisan::output());
+
         \Artisan::call(
             'make:bindings',
-            array('name' =>  $this->arg_name)
+            array('name' => $this->arg_name)
         );
+        $this->info(\Artisan::output());
+
+    }
+    protected function promptForMissingArgumentsUsing(): array
+    {
+        return [
+            "" => 'Harus ada pilihan',
+        ];
     }
 }

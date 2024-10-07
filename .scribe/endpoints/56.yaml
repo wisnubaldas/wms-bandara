@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the irreg.'
         required: true
-        example: aspernatur
+        example: ipsum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aspernatur
+      id: ipsum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the irreg.'
         required: true
-        example: velit
+        example: voluptate
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: velit
+      id: voluptate
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the irreg.'
         required: true
-        example: distinctio
+        example: totam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: distinctio
+      id: totam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

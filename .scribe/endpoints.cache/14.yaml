@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the rubah.'
         required: true
-        example: magnam
+        example: nam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: magnam
+      id: nam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the rubah.'
         required: true
-        example: commodi
+        example: officia
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: commodi
+      id: officia
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the rubah.'
         required: true
-        example: quam
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quam
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

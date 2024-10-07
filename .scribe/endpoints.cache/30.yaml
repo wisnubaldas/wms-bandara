@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the master waybill.'
         required: true
-        example: quis
+        example: dolorum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quis
+      id: dolorum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the master waybill.'
         required: true
-        example: aliquam
+        example: perferendis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aliquam
+      id: perferendis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the master waybill.'
         required: true
-        example: et
+        example: facilis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: facilis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -310,13 +310,13 @@ endpoints:
         name: id
         description: 'The ID of the master waybill.'
         required: true
-        example: eos
+        example: aut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: eos
+      id: aut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -362,13 +362,13 @@ endpoints:
         name: id
         description: 'The ID of the master waybill.'
         required: true
-        example: nostrum
+        example: reprehenderit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nostrum
+      id: reprehenderit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -404,13 +404,13 @@ endpoints:
         name: id
         description: 'The ID of the master waybill.'
         required: true
-        example: blanditiis
+        example: accusamus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: blanditiis
+      id: accusamus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

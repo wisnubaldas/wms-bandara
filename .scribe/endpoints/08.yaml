@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the login.'
         required: true
-        example: doloremque
+        example: quibusdam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: doloremque
+      id: quibusdam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the login.'
         required: true
-        example: beatae
+        example: ea
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: beatae
+      id: ea
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the login.'
         required: true
-        example: est
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: est
+      id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

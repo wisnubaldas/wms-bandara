@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice header.'
         required: true
-        example: illo
+        example: deserunt
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: illo
+      id: deserunt
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice header.'
         required: true
-        example: beatae
+        example: eos
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: beatae
+      id: eos
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice header.'
         required: true
-        example: dolor
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dolor
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -310,13 +310,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice header.'
         required: true
-        example: natus
+        example: repellendus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: natus
+      id: repellendus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -362,13 +362,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice header.'
         required: true
-        example: ut
+        example: non
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ut
+      id: non
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -404,13 +404,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice header.'
         required: true
-        example: quod
+        example: doloribus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quod
+      id: doloribus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

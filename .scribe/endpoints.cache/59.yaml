@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the noa.'
         required: true
-        example: adipisci
+        example: quia
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: adipisci
+      id: quia
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the noa.'
         required: true
-        example: in
+        example: ut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: in
+      id: ut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the noa.'
         required: true
-        example: nam
+        example: quod
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nam
+      id: quod
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

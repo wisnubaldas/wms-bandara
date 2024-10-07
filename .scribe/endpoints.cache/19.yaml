@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the void.'
         required: true
-        example: et
+        example: eius
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: eius
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the void.'
         required: true
-        example: voluptate
+        example: itaque
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptate
+      id: itaque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the void.'
         required: true
-        example: enim
+        example: quis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: enim
+      id: quis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

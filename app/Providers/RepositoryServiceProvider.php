@@ -23,6 +23,7 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstAirlinesRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstArrivalRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstBeacukaiRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstBeacukaiRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstCountryRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstCountryRepositoryEloquent::class);
         //:end-bindings:
     }
 }

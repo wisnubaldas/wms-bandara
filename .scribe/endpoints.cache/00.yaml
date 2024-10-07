@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the cloud status.'
         required: true
-        example: tenetur
+        example: ut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: tenetur
+      id: ut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the cloud status.'
         required: true
-        example: enim
+        example: libero
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: enim
+      id: libero
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the cloud status.'
         required: true
-        example: molestiae
+        example: nam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: molestiae
+      id: nam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

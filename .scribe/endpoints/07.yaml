@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the incoming.'
         required: true
-        example: similique
+        example: consequatur
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: similique
+      id: consequatur
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the incoming.'
         required: true
-        example: tempore
+        example: consectetur
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: tempore
+      id: consectetur
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the incoming.'
         required: true
-        example: repudiandae
+        example: cum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: repudiandae
+      id: cum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

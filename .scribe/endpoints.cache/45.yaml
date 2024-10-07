@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the exp out.'
         required: true
-        example: facere
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: facere
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the exp out.'
         required: true
-        example: qui
+        example: odit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: qui
+      id: odit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the exp out.'
         required: true
-        example: eum
+        example: blanditiis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: eum
+      id: blanditiis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

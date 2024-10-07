@@ -1,0 +1,214 @@
+name: OperatorWhController
+description: |-
+
+  APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/mst/operator-wh
+    metadata:
+      groupName: OperatorWhController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET OperatorWhController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/mst/operator-wh
+    metadata:
+      groupName: OperatorWhController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'POST OperatorWhController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/mst/operator-wh/{id}'
+    metadata:
+      groupName: OperatorWhController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET OperatorWhController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the operator wh.'
+        required: true
+        example: quia
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: quia
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/mst/operator-wh/{id}'
+    metadata:
+      groupName: OperatorWhController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'PUT, PATCH OperatorWhController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the operator wh.'
+        required: true
+        example: voluptatem
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: voluptatem
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/mst/operator-wh/{id}'
+    metadata:
+      groupName: OperatorWhController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'DELETE OperatorWhController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the operator wh.'
+        required: true
+        example: et
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: et
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

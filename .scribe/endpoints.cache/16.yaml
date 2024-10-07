@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the sigo.'
         required: true
-        example: rerum
+        example: nostrum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: rerum
+      id: nostrum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the sigo.'
         required: true
-        example: occaecati
+        example: tenetur
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: occaecati
+      id: tenetur
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the sigo.'
         required: true
-        example: sit
+        example: rerum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: sit
+      id: rerum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

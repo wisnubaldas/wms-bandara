@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the breakdown detail.'
         required: true
-        example: autem
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: autem
+      id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the breakdown detail.'
         required: true
-        example: nemo
+        example: nam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nemo
+      id: nam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the breakdown detail.'
         required: true
-        example: est
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: est
+      id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
