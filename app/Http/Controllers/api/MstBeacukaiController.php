@@ -5,6 +5,12 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repositories\Eloquent\WarehouseJKT\MstBeacukaiRepositoryEloquent;
+/**
+ * @group Master
+ *
+ * APIs for All Master Controller
+ * 
+ */
 class MstBeacukaiController extends Controller
 {
     protected $bc;

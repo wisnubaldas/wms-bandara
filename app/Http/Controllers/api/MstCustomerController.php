@@ -4,7 +4,12 @@ namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+/**
+ * @group Master
+ *
+ * APIs for All Master Controller
+ * 
+ */
 class MstCustomerController extends Controller
 {
     /**

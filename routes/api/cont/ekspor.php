@@ -6,5 +6,5 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\api\cont\EksporController;
 
 Route::prefix('api/cont/')->group(function () {
-    Route::apiResource('cont/ekspor', EksporController::class);
+    Route::apiResource('ekspor', EksporController::class);
 })->middleware('api');

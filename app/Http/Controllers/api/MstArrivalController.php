@@ -6,7 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent;
 use App\Http\Requests\WarehouseJKT\MstArrival;
-
+/**
+ * @group Master
+ *
+ * APIs for All Master Controller
+ * 
+ */
 class MstArrivalController extends Controller
 {
     protected $arrival;

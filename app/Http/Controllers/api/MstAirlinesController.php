@@ -5,6 +5,12 @@ namespace App\Http\Controllers\api;
 use App\Http\Controllers\Controller;
 use App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent;
 use App\Http\Requests\MstAirlines;
+/**
+ * @group Master
+ *
+ * APIs for All Master Controller
+ * 
+ */
 class MstAirlinesController extends Controller
 {
     protected $airlines;
