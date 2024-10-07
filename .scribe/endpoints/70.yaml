@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the deposit header.'
         required: true
-        example: delectus
+        example: molestiae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: delectus
+      id: molestiae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the deposit header.'
         required: true
-        example: iste
+        example: nemo
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: iste
+      id: nemo
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the deposit header.'
         required: true
-        example: suscipit
+        example: sint
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: suscipit
+      id: sint
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

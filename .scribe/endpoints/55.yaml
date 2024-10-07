@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the irreg pic.'
         required: true
-        example: aliquid
+        example: fugit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aliquid
+      id: fugit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the irreg pic.'
         required: true
-        example: itaque
+        example: porro
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: itaque
+      id: porro
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the irreg pic.'
         required: true
-        example: accusantium
+        example: tempora
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: accusantium
+      id: tempora
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

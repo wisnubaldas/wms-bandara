@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the route.'
         required: true
-        example: ipsam
+        example: nam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ipsam
+      id: nam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the route.'
         required: true
-        example: ducimus
+        example: beatae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ducimus
+      id: beatae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the route.'
         required: true
-        example: ipsam
+        example: cum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ipsam
+      id: cum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

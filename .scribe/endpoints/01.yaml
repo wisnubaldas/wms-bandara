@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the ekspor.'
         required: true
-        example: consequatur
+        example: minus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: minus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the ekspor.'
         required: true
-        example: et
+        example: sed
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: sed
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the ekspor.'
         required: true
-        example: et
+        example: vel
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: vel
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

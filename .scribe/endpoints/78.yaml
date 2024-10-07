@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the nature of good.'
         required: true
-        example: nobis
+        example: numquam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nobis
+      id: numquam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the nature of good.'
         required: true
-        example: iste
+        example: distinctio
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: iste
+      id: distinctio
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the nature of good.'
         required: true
-        example: ut
+        example: enim
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ut
+      id: enim
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

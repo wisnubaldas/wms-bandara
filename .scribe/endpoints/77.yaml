@@ -71,7 +71,7 @@ endpoints:
         name: TwoLetterCode
         description: 'Must be at least 1 character. Must not be greater than 2 characters.'
         required: false
-        example: i
+        example: ie
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -80,7 +80,7 @@ endpoints:
         name: ThreeLetterCode
         description: 'Must be at least 1 character. Must not be greater than 3 characters.'
         required: false
-        example: xh
+        example: jvn
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -89,7 +89,7 @@ endpoints:
         name: AirlinesName
         description: 'Must be at least 1 character. Must not be greater than 25 characters.'
         required: false
-        example: bx
+        example: cyjghcvmxzx
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -98,7 +98,7 @@ endpoints:
         name: CountryCode
         description: 'Must be at least 1 character. Must not be greater than 2 characters.'
         required: false
-        example: cg
+        example: vm
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -116,7 +116,7 @@ endpoints:
         name: Void
         description: 'Must be at least 1. Must not be greater than 2.'
         required: true
-        example: 1
+        example: 2
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -125,7 +125,7 @@ endpoints:
         name: KodeGudangByCustom
         description: 'Must be at least 1 character. Must not be greater than 5 characters.'
         required: true
-        example: it
+        example: emyqy
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -134,7 +134,7 @@ endpoints:
         name: WHcode
         description: 'Must be at least 1 character. Must not be greater than 5 characters.'
         required: false
-        example: jncbn
+        example: cxhaq
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -143,7 +143,7 @@ endpoints:
         name: activeGud
         description: ''
         required: false
-        example: '5'
+        example: '4'
         type: string
         enumValues:
           - '1'
@@ -157,7 +157,7 @@ endpoints:
         name: flag_ekspor
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -199,16 +199,16 @@ endpoints:
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      TwoLetterCode: i
-      ThreeLetterCode: xh
-      AirlinesName: bx
-      CountryCode: cg
+      TwoLetterCode: ie
+      ThreeLetterCode: jvn
+      AirlinesName: cyjghcvmxzx
+      CountryCode: vm
       Actived: 2
-      Void: 1
-      KodeGudangByCustom: it
-      WHcode: jncbn
-      activeGud: '5'
-      flag_ekspor: false
+      Void: 2
+      KodeGudangByCustom: emyqy
+      WHcode: cxhaq
+      activeGud: '4'
+      flag_ekspor: true
       flag_import: true
       flag_outgoing: true
       flag_incoming: true
@@ -250,13 +250,13 @@ endpoints:
         name: id
         description: 'The ID of the mst airline.'
         required: true
-        example: consequatur
+        example: eos
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: eos
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -299,13 +299,13 @@ endpoints:
         name: id
         description: 'The ID of the mst airline.'
         required: true
-        example: quod
+        example: dolore
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quod
+      id: dolore
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -313,7 +313,7 @@ endpoints:
         name: TwoLetterCode
         description: 'Must be at least 1 character. Must not be greater than 2 characters.'
         required: false
-        example: w
+        example: s
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -322,7 +322,7 @@ endpoints:
         name: ThreeLetterCode
         description: 'Must be at least 1 character. Must not be greater than 3 characters.'
         required: false
-        example: b
+        example: oa
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -331,7 +331,7 @@ endpoints:
         name: AirlinesName
         description: 'Must be at least 1 character. Must not be greater than 25 characters.'
         required: false
-        example: ueisrkxskbzcnywktjoaevpz
+        example: smzocuexhgjflgc
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -340,7 +340,7 @@ endpoints:
         name: CountryCode
         description: 'Must be at least 1 character. Must not be greater than 2 characters.'
         required: false
-        example: b
+        example: a
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -367,7 +367,7 @@ endpoints:
         name: KodeGudangByCustom
         description: 'Must be at least 1 character. Must not be greater than 5 characters.'
         required: true
-        example: goee
+        example: hl
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -385,7 +385,7 @@ endpoints:
         name: activeGud
         description: ''
         required: false
-        example: '5'
+        example: '1'
         type: string
         enumValues:
           - '1'
@@ -399,7 +399,7 @@ endpoints:
         name: flag_ekspor
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -408,7 +408,7 @@ endpoints:
         name: flag_import
         description: ''
         required: true
-        example: false
+        example: true
         type: boolean
         enumValues: []
         exampleWasSpecified: false
@@ -441,17 +441,17 @@ endpoints:
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      TwoLetterCode: w
-      ThreeLetterCode: b
-      AirlinesName: ueisrkxskbzcnywktjoaevpz
-      CountryCode: b
+      TwoLetterCode: s
+      ThreeLetterCode: oa
+      AirlinesName: smzocuexhgjflgc
+      CountryCode: a
       Actived: 2
       Void: 1
-      KodeGudangByCustom: goee
+      KodeGudangByCustom: hl
       WHcode: w
-      activeGud: '5'
-      flag_ekspor: false
-      flag_import: false
+      activeGud: '1'
+      flag_ekspor: true
+      flag_import: true
       flag_outgoing: false
       flag_incoming: true
       flag_plp: true
@@ -492,13 +492,13 @@ endpoints:
         name: id
         description: 'The ID of the mst airline.'
         required: true
-        example: molestiae
+        example: voluptas
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: molestiae
+      id: voluptas
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -604,13 +604,13 @@ endpoints:
         name: id
         description: 'The ID of the mst arrival.'
         required: true
-        example: sit
+        example: sed
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: sit
+      id: sed
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -656,13 +656,13 @@ endpoints:
         name: id
         description: 'The ID of the mst arrival.'
         required: true
-        example: illo
+        example: eligendi
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: illo
+      id: eligendi
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -698,13 +698,13 @@ endpoints:
         name: id
         description: 'The ID of the mst arrival.'
         required: true
-        example: cum
+        example: debitis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: cum
+      id: debitis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -810,13 +810,13 @@ endpoints:
         name: id
         description: 'The ID of the mst beacukai.'
         required: true
-        example: eum
+        example: similique
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: eum
+      id: similique
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -862,13 +862,13 @@ endpoints:
         name: id
         description: 'The ID of the mst beacukai.'
         required: true
-        example: quis
+        example: perspiciatis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quis
+      id: perspiciatis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -904,13 +904,13 @@ endpoints:
         name: id
         description: 'The ID of the mst beacukai.'
         required: true
-        example: explicabo
+        example: reiciendis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: explicabo
+      id: reiciendis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

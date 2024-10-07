@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the dok custom.'
         required: true
-        example: vel
+        example: laboriosam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: vel
+      id: laboriosam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the dok custom.'
         required: true
-        example: quidem
+        example: quae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quidem
+      id: quae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the dok custom.'
         required: true
-        example: earum
+        example: assumenda
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: earum
+      id: assumenda
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

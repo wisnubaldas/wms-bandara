@@ -44,22 +44,28 @@ class CustomRepo extends Command
             (array) $tabels
         );
         $this->line('Koneksi ' . $tbl);
-        
-        dd($Conn,$tbl, $this->arg_name);
+        $field = \DB::connection($Conn)->getSchemaBuilder()->getColumnListing($tbl);
+        // dd($Conn,$tbl, $this->arg_name, $field);
 
-        $this->info('Hello, Jing!!!.................');
+        // bikin Model
+        \Artisan::call(
+            'make:model',
+            array('name' => $this->arg_name)
+        );
+        $modelFile = $this->load_model_content($this->arg_name);
+        $this->replace_content($modelFile,[
+            "connection"=>$Conn,
+            "table"=>$tbl,
+            "field"=>$field
+        ]);
+        $this->info(\Artisan::output());
 
         \Artisan::call(
             'make:repository',
             array('name' => $this->arg_name, '--skip-model' => true, '--skip-migration' => true)
         );
         $this->info(\Artisan::output());
-        \Artisan::call(
-            'make:model',
-            array('name' => $this->arg_name)
-        );
-        $this->info(\Artisan::output());
-
+    
         \Artisan::call(
             'make:request',
             array('name' => $this->arg_name . 'Request')
@@ -73,10 +79,21 @@ class CustomRepo extends Command
         $this->info(\Artisan::output());
 
     }
-    protected function promptForMissingArgumentsUsing(): array
-    {
-        return [
-            "" => 'Harus ada pilihan',
-        ];
+   
+    private function load_model_content($name){
+        $name = str_replace('/','\\',$name);
+        return rtrim(dirname(__DIR__,2), '/\\') . 
+        DIRECTORY_SEPARATOR .'Models'.DIRECTORY_SEPARATOR.$name.'.php';
+    }
+    private function replace_content(string $file,array $content){
+        $isi = file_get_contents($file);
+        foreach ($content as $search => $replace)
+        {
+            if(is_array($replace)){
+                $replace = json_encode($replace);
+            }
+            $isi = str_replace('{{'.$search.'}}' , $replace, $isi);
+        }
+        file_put_contents($file,$isi);
     }
 }

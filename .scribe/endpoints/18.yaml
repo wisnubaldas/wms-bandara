@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the status.'
         required: true
-        example: expedita
+        example: aut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: expedita
+      id: aut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the status.'
         required: true
-        example: repudiandae
+        example: delectus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: repudiandae
+      id: delectus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the status.'
         required: true
-        example: harum
+        example: placeat
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: harum
+      id: placeat
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

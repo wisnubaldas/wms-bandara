@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the minchange.'
         required: true
-        example: repellendus
+        example: dolorem
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: repellendus
+      id: dolorem
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the minchange.'
         required: true
-        example: asperiores
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: asperiores
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the minchange.'
         required: true
-        example: vel
+        example: deserunt
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: vel
+      id: deserunt
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

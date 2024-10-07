@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the operator wh.'
         required: true
-        example: quia
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quia
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the operator wh.'
         required: true
-        example: voluptatem
+        example: facilis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptatem
+      id: facilis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the operator wh.'
         required: true
-        example: et
+        example: necessitatibus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: necessitatibus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

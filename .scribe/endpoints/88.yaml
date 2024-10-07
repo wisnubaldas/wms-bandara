@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the warehouse.'
         required: true
-        example: error
+        example: a
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: error
+      id: a
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the warehouse.'
         required: true
-        example: qui
+        example: voluptatum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: qui
+      id: voluptatum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the warehouse.'
         required: true
-        example: neque
+        example: aperiam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: neque
+      id: aperiam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

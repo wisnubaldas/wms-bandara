@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the plp.'
         required: true
-        example: consectetur
+        example: voluptatum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: consectetur
+      id: voluptatum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the plp.'
         required: true
-        example: veritatis
+        example: a
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: veritatis
+      id: a
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the plp.'
         required: true
-        example: atque
+        example: explicabo
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: atque
+      id: explicabo
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

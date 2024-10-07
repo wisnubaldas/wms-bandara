@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the imp in.'
         required: true
-        example: et
+        example: beatae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: beatae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the imp in.'
         required: true
-        example: voluptatem
+        example: ad
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptatem
+      id: ad
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

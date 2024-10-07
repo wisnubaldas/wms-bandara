@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the item.'
         required: true
-        example: laboriosam
+        example: at
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: laboriosam
+      id: at
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the item.'
         required: true
-        example: qui
+        example: quam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: qui
+      id: quam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the item.'
         required: true
-        example: nihil
+        example: consectetur
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nihil
+      id: consectetur
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

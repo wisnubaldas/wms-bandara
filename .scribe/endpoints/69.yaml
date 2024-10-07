@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the deposit detail.'
         required: true
-        example: cum
+        example: saepe
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: cum
+      id: saepe
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the deposit detail.'
         required: true
-        example: numquam
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: numquam
+      id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the deposit detail.'
         required: true
-        example: sit
+        example: ut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: sit
+      id: ut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

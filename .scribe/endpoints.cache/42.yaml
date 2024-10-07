@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the kur.'
         required: true
-        example: aut
+        example: repudiandae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aut
+      id: repudiandae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the kur.'
         required: true
-        example: quia
+        example: ea
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quia
+      id: ea
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the kur.'
         required: true
-        example: unde
+        example: reprehenderit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: unde
+      id: reprehenderit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

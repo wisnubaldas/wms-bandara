@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the country.'
         required: true
-        example: et
+        example: labore
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: labore
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the country.'
         required: true
-        example: optio
+        example: non
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: optio
+      id: non
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the country.'
         required: true
-        example: eveniet
+        example: saepe
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: eveniet
+      id: saepe
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

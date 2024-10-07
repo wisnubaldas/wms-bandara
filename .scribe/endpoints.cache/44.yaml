@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the exp in.'
         required: true
-        example: laborum
+        example: libero
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: laborum
+      id: libero
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the exp in.'
         required: true
-        example: beatae
+        example: voluptas
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: beatae
+      id: voluptas
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the exp in.'
         required: true
-        example: atque
+        example: tempore
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: atque
+      id: tempore
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

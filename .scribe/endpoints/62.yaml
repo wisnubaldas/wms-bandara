@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the pod detail.'
         required: true
-        example: incidunt
+        example: id
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: incidunt
+      id: id
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the pod detail.'
         required: true
-        example: voluptatem
+        example: eos
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptatem
+      id: eos
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

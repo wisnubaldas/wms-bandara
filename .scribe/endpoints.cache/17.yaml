@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the sitatext.'
         required: true
-        example: quaerat
+        example: amet
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quaerat
+      id: amet
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the sitatext.'
         required: true
-        example: aut
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aut
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the sitatext.'
         required: true
-        example: tempore
+        example: id
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: tempore
+      id: id
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the actived.'
         required: true
-        example: provident
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: provident
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the actived.'
         required: true
-        example: magni
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: magni
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the actived.'
         required: true
-        example: quia
+        example: molestiae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quia
+      id: molestiae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

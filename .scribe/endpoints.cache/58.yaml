@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: neque
+        example: iusto
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: neque
+      id: iusto
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: reiciendis
+        example: vel
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: reiciendis
+      id: vel
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: architecto
+        example: placeat
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: architecto
+      id: placeat
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -310,13 +310,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: fuga
+        example: neque
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: fuga
+      id: neque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -362,13 +362,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: magnam
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: magnam
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -404,13 +404,13 @@ endpoints:
         name: id
         description: 'The ID of the location.'
         required: true
-        example: quaerat
+        example: voluptates
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quaerat
+      id: voluptates
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

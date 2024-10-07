@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the number.'
         required: true
-        example: dolores
+        example: quod
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dolores
+      id: quod
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the number.'
         required: true
-        example: omnis
+        example: quis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: omnis
+      id: quis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the number.'
         required: true
-        example: nisi
+        example: fuga
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nisi
+      id: fuga
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

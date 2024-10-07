@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing detail.'
         required: true
-        example: aut
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aut
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing detail.'
         required: true
-        example: veniam
+        example: nobis
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: veniam
+      id: nobis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing detail.'
         required: true
-        example: nam
+        example: itaque
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nam
+      id: itaque
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the scan c1.'
         required: true
-        example: non
+        example: aliquid
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: non
+      id: aliquid
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the scan c1.'
         required: true
-        example: molestiae
+        example: odio
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: molestiae
+      id: odio
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

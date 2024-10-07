@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the directory.'
         required: true
-        example: reprehenderit
+        example: molestiae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: reprehenderit
+      id: molestiae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the directory.'
         required: true
-        example: veritatis
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: veritatis
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the directory.'
         required: true
-        example: et
+        example: nulla
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: nulla
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

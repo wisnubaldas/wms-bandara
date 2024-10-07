@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the import.'
         required: true
-        example: hic
+        example: velit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: hic
+      id: velit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the import.'
         required: true
-        example: accusamus
+        example: sit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: accusamus
+      id: sit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the import.'
         required: true
-        example: nulla
+        example: id
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nulla
+      id: id
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

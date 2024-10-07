@@ -8,8 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class MstCountry extends Model
 {
     use HasFactory;
-    // protected $connection = 'rdwarehouse_jkt';
-    // protected $table = 'mst_airlines';
+    // protected $connection = '{{connection}}';
+    // protected $table = '{{table}}';
     // protected $primaryKey = 'Noid';
     // public $incrementing = false;
     // protected $keyType = 'string';
@@ -37,5 +37,5 @@ class MstCountry extends Model
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = [];
+    // protected $fillable = {{field}};
 }

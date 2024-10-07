@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the schedule.'
         required: true
-        example: aliquam
+        example: ut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: aliquam
+      id: ut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the schedule.'
         required: true
-        example: quaerat
+        example: sapiente
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quaerat
+      id: sapiente
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the schedule.'
         required: true
-        example: repudiandae
+        example: dolores
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: repudiandae
+      id: dolores
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

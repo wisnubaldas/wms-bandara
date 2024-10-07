@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the find datum.'
         required: true
-        example: delectus
+        example: dolores
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: delectus
+      id: dolores
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the find datum.'
         required: true
-        example: voluptas
+        example: magnam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptas
+      id: magnam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the find datum.'
         required: true
-        example: corrupti
+        example: repellendus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: corrupti
+      id: repellendus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

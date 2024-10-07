@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing header.'
         required: true
-        example: rerum
+        example: dolor
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: rerum
+      id: dolor
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing header.'
         required: true
-        example: perspiciatis
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: perspiciatis
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing header.'
         required: true
-        example: asperiores
+        example: consequatur
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: asperiores
+      id: consequatur
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

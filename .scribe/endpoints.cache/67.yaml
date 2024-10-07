@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the customer.'
         required: true
-        example: in
+        example: eligendi
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: in
+      id: eligendi
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the customer.'
         required: true
-        example: nihil
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: nihil
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the customer.'
         required: true
-        example: praesentium
+        example: dicta
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: praesentium
+      id: dicta
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

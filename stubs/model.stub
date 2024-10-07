@@ -9,8 +9,8 @@ class {{ class }} extends Model
 {
     {{ factoryDocBlock }}
     use HasFactory;
-    // protected $connection = 'rdwarehouse_jkt';
-    // protected $table = 'mst_airlines';
+    // protected $connection = '{{connection}}';
+    // protected $table = '{{table}}';
     // protected $primaryKey = 'Noid';
     // public $incrementing = false;
     // protected $keyType = 'string';
@@ -38,5 +38,5 @@ class {{ class }} extends Model
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = [];
+    // protected $fillable = {{field}};
 }

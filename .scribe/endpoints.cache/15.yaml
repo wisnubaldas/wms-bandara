@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the search.'
         required: true
-        example: dicta
+        example: cupiditate
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dicta
+      id: cupiditate
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the search.'
         required: true
-        example: quaerat
+        example: officia
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quaerat
+      id: officia
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the search.'
         required: true
-        example: culpa
+        example: sit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: culpa
+      id: sit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup detail.'
         required: true
-        example: enim
+        example: delectus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: enim
+      id: delectus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup detail.'
         required: true
-        example: quo
+        example: nulla
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quo
+      id: nulla
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the buildup detail.'
         required: true
-        example: accusantium
+        example: ducimus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: accusantium
+      id: ducimus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

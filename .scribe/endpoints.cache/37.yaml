@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing vol.'
         required: true
-        example: optio
+        example: nemo
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: optio
+      id: nemo
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the weighing vol.'
         required: true
-        example: dolorum
+        example: ut
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dolorum
+      id: ut
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

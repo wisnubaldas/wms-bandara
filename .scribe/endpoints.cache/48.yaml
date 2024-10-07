@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the bc11.'
         required: true
-        example: magnam
+        example: earum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: magnam
+      id: earum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the bc11.'
         required: true
-        example: delectus
+        example: labore
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: delectus
+      id: labore
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the bc11.'
         required: true
-        example: quasi
+        example: at
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quasi
+      id: at
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

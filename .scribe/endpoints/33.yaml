@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the storage.'
         required: true
-        example: similique
+        example: iusto
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: similique
+      id: iusto
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the storage.'
         required: true
-        example: corporis
+        example: nulla
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: corporis
+      id: nulla
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the storage.'
         required: true
-        example: voluptates
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptates
+      id: et
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

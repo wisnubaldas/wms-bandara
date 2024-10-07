@@ -101,13 +101,13 @@ endpoints:
         name: id
         description: 'The ID of the host awb.'
         required: true
-        example: totam
+        example: rem
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: totam
+      id: rem
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -153,13 +153,13 @@ endpoints:
         name: id
         description: 'The ID of the host awb.'
         required: true
-        example: itaque
+        example: assumenda
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: itaque
+      id: assumenda
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -195,13 +195,13 @@ endpoints:
         name: id
         description: 'The ID of the host awb.'
         required: true
-        example: labore
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: labore
+      id: qui
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -310,13 +310,13 @@ endpoints:
         name: id
         description: 'The ID of the host awb.'
         required: true
-        example: sit
+        example: temporibus
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: sit
+      id: temporibus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -362,13 +362,13 @@ endpoints:
         name: id
         description: 'The ID of the host awb.'
         required: true
-        example: ratione
+        example: optio
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: ratione
+      id: optio
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -404,13 +404,13 @@ endpoints:
         name: id
         description: 'The ID of the host awb.'
         required: true
-        example: odit
+        example: recusandae
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: odit
+      id: recusandae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

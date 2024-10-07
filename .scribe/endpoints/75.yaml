@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the harmonized.'
         required: true
-        example: non
+        example: nisi
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: non
+      id: nisi
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the harmonized.'
         required: true
-        example: accusamus
+        example: unde
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: accusamus
+      id: unde
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the harmonized.'
         required: true
-        example: et
+        example: cum
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: et
+      id: cum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

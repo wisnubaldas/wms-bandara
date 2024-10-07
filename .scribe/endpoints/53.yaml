@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the deliorder header.'
         required: true
-        example: delectus
+        example: nam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: delectus
+      id: nam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the deliorder header.'
         required: true
-        example: voluptatibus
+        example: velit
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: voluptatibus
+      id: velit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the deliorder header.'
         required: true
-        example: consequatur
+        example: iste
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: consequatur
+      id: iste
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice pecah po.'
         required: true
-        example: dicta
+        example: culpa
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: dicta
+      id: culpa
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice pecah po.'
         required: true
-        example: vitae
+        example: magnam
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: vitae
+      id: magnam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the invoice pecah po.'
         required: true
-        example: minus
+        example: ratione
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: minus
+      id: ratione
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

@@ -99,13 +99,13 @@ endpoints:
         name: id
         description: 'The ID of the payment.'
         required: true
-        example: facere
+        example: eos
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: facere
+      id: eos
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,13 +151,13 @@ endpoints:
         name: id
         description: 'The ID of the payment.'
         required: true
-        example: maiores
+        example: fugiat
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: maiores
+      id: fugiat
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -193,13 +193,13 @@ endpoints:
         name: id
         description: 'The ID of the payment.'
         required: true
-        example: quia
+        example: similique
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: quia
+      id: similique
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
