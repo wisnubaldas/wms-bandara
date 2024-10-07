@@ -1,0 +1,214 @@
+name: RubahController
+description: |-
+
+  APIs for App\Http\Controllers\api\Cont\RubahController::class
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/cont/rubah
+    metadata:
+      groupName: RubahController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\RubahController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET RubahController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/cont/rubah
+    metadata:
+      groupName: RubahController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\RubahController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'POST RubahController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/cont/rubah/{id}'
+    metadata:
+      groupName: RubahController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\RubahController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET RubahController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the rubah.'
+        required: true
+        example: magnam
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: magnam
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/cont/rubah/{id}'
+    metadata:
+      groupName: RubahController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\RubahController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'PUT, PATCH RubahController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the rubah.'
+        required: true
+        example: commodi
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: commodi
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/cont/rubah/{id}'
+    metadata:
+      groupName: RubahController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\RubahController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'DELETE RubahController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the rubah.'
+        required: true
+        example: quam
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: quam
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

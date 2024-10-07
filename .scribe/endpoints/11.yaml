@@ -1,0 +1,214 @@
+name: OutgoingController
+description: |-
+
+  APIs for App\Http\Controllers\api\Cont\OutgoingController::class
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/cont/outgoing
+    metadata:
+      groupName: OutgoingController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\OutgoingController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET OutgoingController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/cont/outgoing
+    metadata:
+      groupName: OutgoingController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\OutgoingController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'POST OutgoingController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/cont/outgoing/{id}'
+    metadata:
+      groupName: OutgoingController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\OutgoingController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET OutgoingController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the outgoing.'
+        required: true
+        example: inventore
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: inventore
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/cont/outgoing/{id}'
+    metadata:
+      groupName: OutgoingController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\OutgoingController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'PUT, PATCH OutgoingController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the outgoing.'
+        required: true
+        example: dolorem
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: dolorem
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/cont/outgoing/{id}'
+    metadata:
+      groupName: OutgoingController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Cont\OutgoingController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'DELETE OutgoingController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the outgoing.'
+        required: true
+        example: ab
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: ab
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []

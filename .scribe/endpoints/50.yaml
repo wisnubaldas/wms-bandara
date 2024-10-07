@@ -1,0 +1,214 @@
+name: BreakdownHeaderController
+description: |-
+
+  APIs for App\Http\Controllers\api\Impor\BreakdownHeaderController::class
+endpoints:
+  -
+    httpMethods:
+      - GET
+    uri: api/impor/breakdown-header
+    metadata:
+      groupName: BreakdownHeaderController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Impor\BreakdownHeaderController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET BreakdownHeaderController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/impor/breakdown-header
+    metadata:
+      groupName: BreakdownHeaderController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Impor\BreakdownHeaderController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'POST BreakdownHeaderController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/impor/breakdown-header/{id}'
+    metadata:
+      groupName: BreakdownHeaderController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Impor\BreakdownHeaderController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'GET BreakdownHeaderController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the breakdown header.'
+        required: true
+        example: omnis
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: omnis
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses:
+      -
+        status: 200
+        content: ''
+        headers:
+          content-type: 'text/html; charset=UTF-8'
+          cache-control: 'no-cache, private'
+          access-control-allow-origin: '*'
+        description: null
+        custom: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+      - PATCH
+    uri: 'api/impor/breakdown-header/{id}'
+    metadata:
+      groupName: BreakdownHeaderController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Impor\BreakdownHeaderController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'PUT, PATCH BreakdownHeaderController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the breakdown header.'
+        required: true
+        example: ex
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: ex
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/impor/breakdown-header/{id}'
+    metadata:
+      groupName: BreakdownHeaderController
+      groupDescription: |-
+
+        APIs for App\Http\Controllers\api\Impor\BreakdownHeaderController::class
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'DELETE BreakdownHeaderController'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the breakdown header.'
+        required: true
+        example: provident
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanUrlParameters:
+      id: provident
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
