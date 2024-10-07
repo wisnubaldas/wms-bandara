@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\api\Cont;
+namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**
- * @group CloudStatusController
+ * @group ContController
  *
- * APIs for App\Http\Controllers\api\ContCloudStatusController
+ * APIs for App\Http\Controllers\api\ContController::class
  * 
  */
 
-class CloudStatusController extends Controller
+class ContController extends Controller
 {
     /**
      * Display a listing of the resource.

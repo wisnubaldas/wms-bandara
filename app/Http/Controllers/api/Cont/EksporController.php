@@ -6,13 +6,13 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**
- * @group CloudStatusController
+ * @group EksporController
  *
- * APIs for App\Http\Controllers\api\ContCloudStatusController
+ * APIs for App\Http\Controllers\api\Cont\EksporController::class
  * 
  */
 
-class CloudStatusController extends Controller
+class EksporController extends Controller
 {
     /**
      * Display a listing of the resource.

@@ -6,11 +6,9 @@ use {{ rootNamespace }}Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**
- * @group {{ namespace }}
+ * @group {{ class }}
  *
- * APIs for {{ class }}
- *
- * @subgroup {{ class }}
+ * APIs for {{ namespace }}\{{ class }}::class
  * 
  */
 
