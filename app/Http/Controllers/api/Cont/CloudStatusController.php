@@ -1,20 +1,21 @@
 <?php
 
-namespace {{ namespace }};
+namespace App\Http\Controllers\api\Cont;
 
-use {{ rootNamespace }}Http\Controllers\Controller;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 /**
- * @group {{ namespace }}
+ * @group App\Http\Controllers\api\Cont
  *
- * APIs for {{ class }}
+ * APIs for CloudStatusController
  *
- * @subgroup {{ class }}
+ * @subgroup CloudStatusController
+ * 
  * 
  */
 
-class {{ class }} extends Controller
+class CloudStatusController extends Controller
 {
     /**
      * Display a listing of the resource.

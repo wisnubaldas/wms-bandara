@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Gate;
-use Dedoc\Scramble\Scramble;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -12,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        Scramble::ignoreDefaultRoutes();
+        
     }
 
     /**
@@ -20,8 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Gate::define('viewApiDocs', function (User $user) {
-            return in_array($user->email, ['admin@app.com']);
-        });
+        
     }
 }
