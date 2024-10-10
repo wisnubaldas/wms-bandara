@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group FinanceController
  *
- * APIs for App\Http\Controllers\api\Cont\FinanceController::class
- * 
  */
 
 class FinanceController extends Controller

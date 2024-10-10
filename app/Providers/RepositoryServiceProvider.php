@@ -26,6 +26,12 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstCountryRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstCountryRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstCustomerRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstCustomerRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstDepartureRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstDepartureRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstCountryRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstCountryRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\TPS\ThInboundRepository::class, \App\Repositories\Eloquent\TPS\ThInboundRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
         //:end-bindings:
     }
 }

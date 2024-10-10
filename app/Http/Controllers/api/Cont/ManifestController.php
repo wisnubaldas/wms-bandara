@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group ManifestController
  *
- * APIs for App\Http\Controllers\api\Cont\ManifestController::class
- * 
  */
 
 class ManifestController extends Controller

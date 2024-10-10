@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group GateController
  *
- * APIs for App\Http\Controllers\api\Cont\GateController::class
- * 
  */
 
 class GateController extends Controller

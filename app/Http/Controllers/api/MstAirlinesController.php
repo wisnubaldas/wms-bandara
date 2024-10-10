@@ -6,10 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent;
 use App\Http\Requests\MstAirlines;
 /**
- * @group Master
+ * @group MstAirlinesController
  *
- * APIs for All Master Controller
- * 
  */
 class MstAirlinesController extends Controller
 {
@@ -19,7 +17,14 @@ class MstAirlinesController extends Controller
         $this->airlines = $airlines;
     }
     /**
-     * Get Paginate Airlines
+     * List items
+     *
+     * Get a list of items.
+     *
+     * @authenticated
+     * @responseFile responses/airlines.index.json
+     *
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {

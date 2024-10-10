@@ -3,36 +3,58 @@
 namespace App\Http\Controllers\api\Cont;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-
+use App\Repositories\Eloquent\TPS\ThInboundRepositoryEloquent;
+use App\Http\Requests\TPS\ThInboundRequest;
 /**
  * @group CloudStatusController
- *
- * APIs for App\Http\Controllers\api\ContCloudStatusController
  * 
  */
 
 class CloudStatusController extends Controller
 {
+    protected $inbound;
+    public function __construct(ThInboundRepositoryEloquent $inbound)
+    {
+        $this->inbound = $inbound;
+    }
     /**
-     * Display a listing of the resource.
+     * All Cloud Status
+     *
+     * @responseFile responses/CloudStatus.index.json
      * 
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return $this->inbound->paginate(10);
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create CloudStatus
+     * 
+     * @authenticated
+     * @response {
+     *      "status": 200,
+     *      "success": true
+     * }
+     *
+     * @param  ThInboundRequest  $request
+     * 
+     * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ThInboundRequest $request)
     {
-        //
+        $request->validated();
+        return $this->inbound->create($request->all());
     }
 
     /**
-     * Display the specified resource.
+     * Show data by id.
+     * 
+     * @pathParam id integer required
+     * The ID of the item to retrieve. Example: 10
+     * 
+     * @responseFile responses/CloudStatus.index.json
      */
     public function show(string $id)
     {
@@ -40,15 +62,15 @@ class CloudStatusController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified CloudStatus.
      */
-    public function update(Request $request, string $id)
+    public function update(ThInboundRequest $request, string $id)
     {
         //
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified CloudStatus.
      */
     public function destroy(string $id)
     {

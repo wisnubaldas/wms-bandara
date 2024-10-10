@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent;
 use App\Http\Requests\WarehouseJKT\MstArrival;
 /**
- * @group Master
+ * @group MstArrivalController
  *
  * APIs for All Master Controller
  * 

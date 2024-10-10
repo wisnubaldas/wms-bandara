@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group IncomingController
  *
- * APIs for App\Http\Controllers\api\Cont\IncomingController::class
- * 
  */
 
 class IncomingController extends Controller

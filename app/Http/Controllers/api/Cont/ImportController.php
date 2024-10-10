@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group ImportController
  *
- * APIs for App\Http\Controllers\api\Cont\ImportController::class
- * 
  */
 
 class ImportController extends Controller

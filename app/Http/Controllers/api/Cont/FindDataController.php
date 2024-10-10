@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group FindDataController
  *
- * APIs for App\Http\Controllers\api\Cont\FindDataController::class
- * 
  */
 
 class FindDataController extends Controller

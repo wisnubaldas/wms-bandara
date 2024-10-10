@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group GseController
  *
- * APIs for App\Http\Controllers\api\Cont\GseController::class
- * 
  */
 
 class GseController extends Controller

@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group RekapAndMonitorController
  *
- * APIs for App\Http\Controllers\api\Cont\RekapAndMonitorController::class
- * 
  */
 
 class RekapAndMonitorController extends Controller

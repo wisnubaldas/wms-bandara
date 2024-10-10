@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group EksporController
  *
- * APIs for App\Http\Controllers\api\Cont\EksporController::class
- * 
  */
 
 class EksporController extends Controller

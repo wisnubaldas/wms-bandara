@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group LoginController
  *
- * APIs for App\Http\Controllers\api\Cont\LoginController::class
- * 
  */
 
 class LoginController extends Controller

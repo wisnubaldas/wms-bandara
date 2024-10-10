@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group MonitoringController
  *
- * APIs for App\Http\Controllers\api\Cont\MonitoringController::class
- * 
  */
 
 class MonitoringController extends Controller

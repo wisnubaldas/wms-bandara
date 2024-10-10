@@ -8,8 +8,6 @@ use Illuminate\Http\Request;
 /**
  * @group PlpController
  *
- * APIs for App\Http\Controllers\api\Cont\PlpController::class
- * 
  */
 
 class PlpController extends Controller

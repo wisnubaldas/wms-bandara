@@ -8,9 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class MstCountry extends Model
 {
     use HasFactory;
-    // protected $connection = '{{connection}}';
-    // protected $table = '{{table}}';
-    // protected $primaryKey = 'Noid';
+    protected $connection = 'rdwarehouse_jkt';
+    protected $table = 'mst_country';
+    protected $primaryKey = 'Noid';
     // public $incrementing = false;
     // protected $keyType = 'string';
     // public $timestamps = false;
@@ -37,5 +37,5 @@ class MstCountry extends Model
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    // protected $fillable = {{field}};
+    protected $fillable = ["Noid","CountryCode","CountryName","void","created_at"];
 }

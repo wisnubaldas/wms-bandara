@@ -4,6 +4,7 @@ namespace {{ namespace }};
 
 use {{ rootNamespace }}Http\Controllers\Controller;
 use Illuminate\Http\Request;
+//:use-space
 
 /**
  * @group {{ class }}
@@ -14,6 +15,10 @@ use Illuminate\Http\Request;
 
 class {{ class }} extends Controller
 {
+    public function __construct() {
+        
+    }
+    
     /**
      * GET {{ class }}
      * 

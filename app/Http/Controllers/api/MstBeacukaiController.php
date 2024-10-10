@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Repositories\Eloquent\WarehouseJKT\MstBeacukaiRepositoryEloquent;
 /**
- * @group Master
+ * @group MstBeacukaiController
  *
  * APIs for All Master Controller
  * 
