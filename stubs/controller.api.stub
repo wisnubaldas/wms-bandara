@@ -9,8 +9,6 @@ use Illuminate\Http\Request;
 /**
  * @group {{ class }}
  *
- * APIs for {{ namespace }}\{{ class }}::class
- * 
  */
 
 class {{ class }} extends Controller
@@ -20,8 +18,11 @@ class {{ class }} extends Controller
     }
     
     /**
-     * GET {{ class }}
+     * All {{ class }} data
+     *
+     * @responseFile responses/{{ class }}.json
      * 
+     * @return \Illuminate\Http\Response
      */
     public function index()
     {
@@ -29,7 +30,17 @@ class {{ class }} extends Controller
     }
 
     /**
-     * POST {{ class }}
+     * Create {{ class }}
+     * 
+     * @authenticated
+     * @response {
+     *      "status": 200,
+     *      "success": true
+     * }
+     *
+     * @param  {{ class }}Request  $request
+     * 
+     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -37,7 +48,12 @@ class {{ class }} extends Controller
     }
 
     /**
-     * GET {{ class }}
+     * Show {{ class }} data by id.
+     * 
+     * @pathParam id integer required
+     * The ID of the item to retrieve. Example: 10
+     * 
+     * @responseFile responses/{{ class }}.json
      */
     public function show(string $id)
     {
@@ -45,7 +61,14 @@ class {{ class }} extends Controller
     }
 
     /**
-     * PUT, PATCH {{ class }}
+     * Show {{ class }} data by id.
+     * 
+     * @pathParam id integer required
+     * The ID of the item to retrieve. Example: 10
+     * 
+     * @authenticated
+     * @param  {{ class }}Request  $request
+     * @responseFile responses/{{ class }}.json
      */
     public function update(Request $request, string $id)
     {
