@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group StatusController
  *
  * APIs for App\Http\Controllers\api\Cont\StatusController::class
- * 
  */
-
 class StatusController extends Controller
 {
     /**
      * GET StatusController
-     * 
      */
     public function index()
     {

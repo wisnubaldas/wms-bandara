@@ -31,7 +31,7 @@ class CreateSendingFwbFCollectchargesummaryTable extends Migration
             $table->string('ChargeIdentifierCT', 2)->nullable();
             $table->string('ChargeAmountCT', 12)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

@@ -26,7 +26,7 @@ class CreateSendingFwbKSenderreferenceTable extends Migration
             $table->string('ParticipantCode', 17)->nullable();
             $table->string('AirportCode', 3)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

@@ -23,7 +23,7 @@ class CreateSendingFwbDOtherchargesTable extends Migration
             $table->string('EntitlementCode', 1)->nullable();
             $table->string('ChargeAmount', 12)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

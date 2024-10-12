@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ShiftController
  *
  * APIs for App\Http\Controllers\api\Mst\ShiftController::class
- * 
  */
-
 class ShiftController extends Controller
 {
     /**
      * GET ShiftController
-     * 
      */
     public function index()
     {

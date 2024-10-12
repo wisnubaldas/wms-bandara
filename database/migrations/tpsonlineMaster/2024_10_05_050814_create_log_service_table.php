@@ -17,13 +17,13 @@ class CreateLogServiceTable extends Migration
             $table->string('uuid', 100)->primary();
             $table->string('user', 100);
             $table->tinyInteger('id_service')->nullable();
-            $table->string('url_services', 100)->comment("nama service");
-            $table->string('keys_id', 100)->comment("untuk kunci pencarian, hawb, gudang, tps, npwp, no sppb dll");
+            $table->string('url_services', 100)->comment('nama service');
+            $table->string('keys_id', 100)->comment('untuk kunci pencarian, hawb, gudang, tps, npwp, no sppb dll');
             $table->text('request_content');
             $table->text('response_content');
             $table->timestamp('timestamp')->default('current_timestamp()');
-            $table->enum('service_success', ['0', '1'])->default('1')->comment("1 = success 0=gagal, status data diterima bc atau gagal keterima");
-            $table->enum('connection_success', ['0', '1'])->default('1')->comment("1 = success 0=gagal, status koneksi ke bc gagal atau sukses");
+            $table->enum('service_success', ['0', '1'])->default('1')->comment('1 = success 0=gagal, status data diterima bc atau gagal keterima');
+            $table->enum('connection_success', ['0', '1'])->default('1')->comment('1 = success 0=gagal, status koneksi ke bc gagal atau sukses');
             $table->timestamp('created')->nullable()->default('current_timestamp()');
         });
     }

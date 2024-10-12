@@ -45,7 +45,7 @@ class CreateGetbc20SppbTable extends Migration
             $table->integer('xml_code')->nullable();
             $table->timestamp('created_at')->nullable()->default('current_timestamp()');
             $table->boolean('flag_out')->default(0)->index('flag_out');
-            
+
             $table->primary(['noid', 'CAR', 'NO_VOY_FLIGHT']);
         });
     }

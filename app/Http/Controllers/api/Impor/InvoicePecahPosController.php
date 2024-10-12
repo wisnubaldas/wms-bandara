@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group InvoicePecahPosController
  *
  * APIs for App\Http\Controllers\api\Impor\InvoicePecahPosController::class
- * 
  */
-
 class InvoicePecahPosController extends Controller
 {
     /**
      * GET InvoicePecahPosController
-     * 
      */
     public function index()
     {

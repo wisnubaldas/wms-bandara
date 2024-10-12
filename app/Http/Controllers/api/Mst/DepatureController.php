@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DepatureController
  *
  * APIs for App\Http\Controllers\api\Mst\DepatureController::class
- * 
  */
-
 class DepatureController extends Controller
 {
     /**
      * GET DepatureController
-     * 
      */
     public function index()
     {

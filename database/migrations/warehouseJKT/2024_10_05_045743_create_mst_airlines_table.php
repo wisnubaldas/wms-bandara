@@ -23,7 +23,7 @@ class CreateMstAirlinesTable extends Migration
             $table->integer('Void')->default(0);
             $table->string('KodeGudangByCustom', 5)->index('KodeGudangByCustom');
             $table->string('WHcode', 5)->nullable();
-            $table->enum('activeGud', ['1', '2', '3', '4', '5'])->nullable()->comment("1=int,2=dom,3=all,4=imp&inc,5=eks&out");
+            $table->enum('activeGud', ['1', '2', '3', '4', '5'])->nullable()->comment('1=int,2=dom,3=all,4=imp&inc,5=eks&out');
             $table->boolean('flag_ekspor')->default(0);
             $table->boolean('flag_import')->default(0);
             $table->boolean('flag_outgoing')->default(0);

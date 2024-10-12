@@ -24,7 +24,7 @@ class MstCountryRequest extends FormRequest
         return [
             'CountryCode' => ['nullable', 'string', 'min:1', 'max:2'],
             'CountryName' => ['nullable', 'string', 'min:1', 'max:35'],
-            'void' => ['required', 'integer',]
+            'void' => ['required', 'integer'],
         ];
     }
 }

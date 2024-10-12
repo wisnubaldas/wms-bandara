@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group IrregController
  *
  * APIs for App\Http\Controllers\api\Impor\IrregController::class
- * 
  */
-
 class IrregController extends Controller
 {
     /**
      * GET IrregController
-     * 
      */
     public function index()
     {

@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group BreakdownDetailController
  *
  * APIs for App\Http\Controllers\api\Impor\BreakdownDetailController::class
- * 
  */
-
 class BreakdownDetailController extends Controller
 {
     /**
      * GET BreakdownDetailController
-     * 
      */
     public function index()
     {

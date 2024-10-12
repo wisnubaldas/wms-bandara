@@ -23,7 +23,7 @@ class CreateTGudangTpsTable extends Migration
             $table->string('tgl_ijin', 10)->nullable();
             $table->string('config_db', 50);
             $table->boolean('is_active')->nullable();
-            
+
             $table->primary(['id_tps', 'config_db']);
         });
     }

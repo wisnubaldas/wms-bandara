@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\TPS;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\TPS\ThInboundRepository;
 use App\Models\TPS\ThInbound;
-use App\Validators\TPS\ThInboundValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class ThInboundRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\TPS;
  */
 class ThInboundRepositoryEloquent extends BaseRepository implements ThInboundRepository
 {
@@ -25,8 +22,6 @@ class ThInboundRepositoryEloquent extends BaseRepository implements ThInboundRep
         return ThInbound::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class ThInboundRepositoryEloquent extends BaseRepository implements ThInboundRep
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

@@ -347,7 +347,7 @@ return [
                      */
                     'without_middleware' => [
                         // \App\Http\Middleware\Authenticate::class
-                    ]
+                    ],
                 ],
             ],
         ],

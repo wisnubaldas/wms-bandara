@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group BuildupHeaderController
  *
  * APIs for App\Http\Controllers\api\Ekspor\BuildupHeaderController::class
- * 
  */
-
 class BuildupHeaderController extends Controller
 {
     /**
      * GET BuildupHeaderController
-     * 
      */
     public function index()
     {

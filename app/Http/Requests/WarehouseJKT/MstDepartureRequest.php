@@ -33,7 +33,7 @@ class MstDepartureRequest extends FormRequest
             'Terminal' => ['nullable', 'string', 'min:1', 'max:50'],
             'Remarks' => ['nullable', 'string', 'min:1', 'max:50'],
             'DateOfDeparture' => ['nullable', 'string', 'min:1', 'max:10'],
-            'DateOfEntry' => ['nullable', 'string', 'min:1', 'max:10']
+            'DateOfEntry' => ['nullable', 'string', 'min:1', 'max:10'],
         ];
     }
 }

@@ -17,7 +17,7 @@ class CreateTCameraTable extends Migration
             $table->integer('id')->primary();
             $table->string('url_camera', 45)->nullable();
             $table->string('gudang', 45)->nullable()->index('gudang');
-            $table->tinyInteger('by_camera')->nullable()->comment("1 = cctv import, 2 = cctv eksport");
+            $table->tinyInteger('by_camera')->nullable()->comment('1 = cctv import, 2 = cctv eksport');
             $table->string('link_rtsp', 300)->nullable();
         });
     }

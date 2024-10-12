@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DirectoryController
  *
  * APIs for App\Http\Controllers\api\Fare\DirectoryController::class
- * 
  */
-
 class DirectoryController extends Controller
 {
     /**
      * GET DirectoryController
-     * 
      */
     public function index()
     {

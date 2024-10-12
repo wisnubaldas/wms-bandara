@@ -10,9 +10,13 @@ use Prettus\Repository\Traits\TransformableTrait;
 class MstBeacukai extends Model implements Transformable
 {
     use HasFactory, TransformableTrait;
+
     protected $connection = 'rdwarehouse_jkt';
+
     protected $table = 'mst_beacukai';
+
     protected $primaryKey = 'Noid';
+
     // public $incrementing = false;
     // protected $keyType = 'string';
     public $timestamps = false;
@@ -27,7 +31,7 @@ class MstBeacukai extends Model implements Transformable
     // {
     //     return 'Arrival at Incoming warehouse';
     // }
-    // // static value untuk model   
+    // // static value untuk model
     // public static function booted()
     // {
     //     parent::boot();
@@ -39,5 +43,5 @@ class MstBeacukai extends Model implements Transformable
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = ["Noid", "kd_KBPC", "Nama_KBPC", "active", "Kota", "Eselon", "NamaProgram", "Registrasi", "void"];
+    protected $fillable = ['Noid', 'kd_KBPC', 'Nama_KBPC', 'active', 'Kota', 'Eselon', 'NamaProgram', 'Registrasi', 'void'];
 }

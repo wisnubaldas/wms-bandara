@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group NoaController
  *
  * APIs for App\Http\Controllers\api\Impor\NoaController::class
- * 
  */
-
 class NoaController extends Controller
 {
     /**
      * GET NoaController
-     * 
      */
     public function index()
     {

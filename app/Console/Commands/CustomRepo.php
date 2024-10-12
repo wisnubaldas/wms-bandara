@@ -2,11 +2,13 @@
 
 namespace App\Console\Commands;
 
-use Illuminate\Console\Command;
 use Brick\VarExporter\VarExporter;
+use Illuminate\Console\Command;
+
 class CustomRepo extends Command
 {
     protected $arg_name;
+
     /**
      * The name and signature of the console command.
      *
@@ -40,13 +42,14 @@ class CustomRepo extends Command
         })->toArray();
 
         $tbl = $this->choice(
-            "Table yang dipake di model apa ?",
+            'Table yang dipake di model apa ?',
             (array) $tabels
         );
+
         $field = $db->getSchemaBuilder()->getColumnListing($tbl);
         $kolom = $db->getSchemaBuilder()->getColumns($tbl);
-        $this->line('Koneksi ' . $Conn);
-        $this->line('Table ' . $tbl);
+        $this->line('Koneksi '.$Conn);
+        $this->line('Table '.$tbl);
         $this->line('Kolom :');
         // dump($kolom);
         // $this->line('Field :');
@@ -70,14 +73,14 @@ class CustomRepo extends Command
                     $max = false;
                     break;
                 default:
-                    $max = "max:".preg_replace('/[^0-9]/','',$v['type']);
+                    $max = 'max:'.preg_replace('/[^0-9]/', '', $v['type']);
                     break;
             }
             $x = [
-                $v['nullable']?'nullable':'required',
+                $v['nullable'] ? 'nullable' : 'required',
                 $v['type_name'],
                 'min:1',
-                $max
+                $max,
             ];
             $x = array_filter($x);
             $rules[$v['name']] = $x;
@@ -85,56 +88,61 @@ class CustomRepo extends Command
         // bikin Model
         \Artisan::call(
             'make:model',
-            array('name' => $this->arg_name)
+            ['name' => $this->arg_name]
         );
         $modelFile = $this->load_model_content($this->arg_name);
         $this->replace_content($modelFile, [
-            "connection" => $Conn,
-            "table" => $tbl,
-            "field" => $field
+            'connection' => $Conn,
+            'table' => $tbl,
+            'field' => $field,
         ]);
         $this->info(\Artisan::output());
 
         \Artisan::call(
             'make:repository',
-            array('name' => $this->arg_name, '--skip-model' => true, '--skip-migration' => true)
+            ['name' => $this->arg_name, '--skip-model' => true, '--skip-migration' => true]
         );
         $this->info(\Artisan::output());
 
         \Artisan::call(
             'make:request',
-            array('name' => $this->arg_name . 'Request')
+            ['name' => $this->arg_name.'Request']
         );
-        $requestFile = $this->load_request_content($this->arg_name . 'Request');
+        $requestFile = $this->load_request_content($this->arg_name.'Request');
         $this->replace_content($requestFile, [
-            "connection" => $Conn,
-            "table" => $tbl,
-            "field" => $field,
-            "rules"=>VarExporter::export($rules,VarExporter::TRAILING_COMMA_IN_ARRAY | VarExporter::INLINE_SCALAR_LIST)
+            'connection' => $Conn,
+            'table' => $tbl,
+            'field' => $field,
+            'rules' => VarExporter::export($rules, VarExporter::TRAILING_COMMA_IN_ARRAY | VarExporter::INLINE_SCALAR_LIST),
         ]);
         $this->info(\Artisan::output());
 
         \Artisan::call(
             'make:bindings',
-            array('name' => $this->arg_name)
+            ['name' => $this->arg_name]
         );
         $this->info(\Artisan::output());
 
     }
 
-    private function load_request_content($name){
+    private function load_request_content($name)
+    {
         $name = str_replace('/', '\\', $name);
-        return rtrim(dirname(__DIR__, 2), '/\\') .
-            DIRECTORY_SEPARATOR . 'Http' . 
-            DIRECTORY_SEPARATOR . 'Requests' .
-            DIRECTORY_SEPARATOR . $name . '.php';
+
+        return rtrim(dirname(__DIR__, 2), '/\\').
+            DIRECTORY_SEPARATOR.'Http'.
+            DIRECTORY_SEPARATOR.'Requests'.
+            DIRECTORY_SEPARATOR.$name.'.php';
     }
+
     private function load_model_content($name)
     {
         $name = str_replace('/', '\\', $name);
-        return rtrim(dirname(__DIR__, 2), '/\\') .
-            DIRECTORY_SEPARATOR . 'Models' . DIRECTORY_SEPARATOR . $name . '.php';
+
+        return rtrim(dirname(__DIR__, 2), '/\\').
+            DIRECTORY_SEPARATOR.'Models'.DIRECTORY_SEPARATOR.$name.'.php';
     }
+
     private function replace_content(string $file, array $content)
     {
         $isi = file_get_contents($file);
@@ -142,7 +150,7 @@ class CustomRepo extends Command
             if (is_array($replace)) {
                 $replace = json_encode($replace);
             }
-            $isi = str_replace('{{' . $search . '}}', $replace, $isi);
+            $isi = str_replace('{{'.$search.'}}', $replace, $isi);
         }
         file_put_contents($file, $isi);
     }

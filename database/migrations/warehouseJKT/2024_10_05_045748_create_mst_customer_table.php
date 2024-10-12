@@ -38,7 +38,7 @@ class CreateMstCustomerTable extends Migration
             $table->string('TimeEntry', 8)->nullable();
             $table->boolean('void')->default(0)->index('void');
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['_id', 'CustomerCode']);
         });
     }

@@ -20,7 +20,7 @@ class CreateSendingFwbLCustomsoriginTable extends Migration
             $table->string('LineIdentifier', 3)->nullable();
             $table->string('CustomsOriginCode', 2)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

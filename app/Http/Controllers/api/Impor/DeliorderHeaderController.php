@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DeliorderHeaderController
  *
  * APIs for App\Http\Controllers\api\Impor\DeliorderHeaderController::class
- * 
  */
-
 class DeliorderHeaderController extends Controller
 {
     /**
      * GET DeliorderHeaderController
-     * 
      */
     public function index()
     {

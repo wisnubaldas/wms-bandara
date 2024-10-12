@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group FlightController
  *
  * APIs for App\Http\Controllers\api\Mst\FlightController::class
- * 
  */
-
 class FlightController extends Controller
 {
     /**
      * GET FlightController
-     * 
      */
     public function index()
     {

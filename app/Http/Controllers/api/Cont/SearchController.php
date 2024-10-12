@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group SearchController
  *
  * APIs for App\Http\Controllers\api\Cont\SearchController::class
- * 
  */
-
 class SearchController extends Controller
 {
     /**
      * GET SearchController
-     * 
      */
     public function index()
     {

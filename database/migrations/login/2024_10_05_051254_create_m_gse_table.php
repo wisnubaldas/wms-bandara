@@ -21,7 +21,7 @@ class CreateMGseTable extends Migration
             $table->string('rental_unit', 5);
             $table->integer('void')->default(0);
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['_id', 'EquipmentCode']);
         });
     }

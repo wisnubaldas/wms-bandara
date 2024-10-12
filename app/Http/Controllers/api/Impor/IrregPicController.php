@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group IrregPicController
  *
  * APIs for App\Http\Controllers\api\Impor\IrregPicController::class
- * 
  */
-
 class IrregPicController extends Controller
 {
     /**
      * GET IrregPicController
-     * 
      */
     public function index()
     {

@@ -22,9 +22,9 @@ class CreateBatalRespPlpTujTable extends Migration
             $table->string('gudang_asal', 4)->nullable();
             $table->string('gudang_tujuan', 4)->nullable();
             $table->string('no_plp', 8)->nullable();
-            $table->string('tgl_plp', 8)->nullable()->comment("yyyyMMdd");
+            $table->string('tgl_plp', 8)->nullable()->comment('yyyyMMdd');
             $table->string('no_batal_plp', 30)->nullable();
-            $table->string('tgl_batal_plp', 8)->nullable()->comment("yyyyMMdd");
+            $table->string('tgl_batal_plp', 8)->nullable()->comment('yyyyMMdd');
             $table->string('alasan_batal', 30)->nullable();
         });
     }

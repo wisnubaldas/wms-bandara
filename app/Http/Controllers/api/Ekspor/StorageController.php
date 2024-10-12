@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group StorageController
  *
  * APIs for App\Http\Controllers\api\Ekspor\StorageController::class
- * 
  */
-
 class StorageController extends Controller
 {
     /**
      * GET StorageController
-     * 
      */
     public function index()
     {

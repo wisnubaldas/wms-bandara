@@ -20,7 +20,7 @@ class CreateMohonPlpDetTable extends Migration
             $table->string('jns_kms', 30);
             $table->integer('jml_kms');
             $table->string('no_bl_awb', 30);
-            $table->string('tgl_bl_Awb', 8)->comment("yyyyMMdd");
+            $table->string('tgl_bl_Awb', 8)->comment('yyyyMMdd');
             $table->timestamps();
         });
     }

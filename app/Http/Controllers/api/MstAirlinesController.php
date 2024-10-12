@@ -3,50 +3,54 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
-use App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent;
 use App\Http\Requests\MstAirlines;
+use App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent;
+
 /**
  * @group MstAirlinesController
- *
  */
 class MstAirlinesController extends Controller
 {
     protected $airlines;
+
     public function __construct(MstAirlinesRepositoryEloquent $airlines)
     {
         $this->airlines = $airlines;
     }
+
     /**
      * List items
      *
      * Get a list of items.
      *
      * @authenticated
+     *
      * @responseFile responses/airlines.index.json
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        return $this->airlines->paginate(10, ["Noid", "TwoLetterCode", "ThreeLetterCode", "AirlinesName", "CountryCode", "Actived", "Void", "KodeGudangByCustom", "WHcode", "activeGud", "flag_ekspor", "flag_import", "flag_outgoing", "flag_incoming", "flag_plp"]);
+        return $this->airlines->paginate(10, ['Noid', 'TwoLetterCode', 'ThreeLetterCode', 'AirlinesName', 'CountryCode', 'Actived', 'Void', 'KodeGudangByCustom', 'WHcode', 'activeGud', 'flag_ekspor', 'flag_import', 'flag_outgoing', 'flag_incoming', 'flag_plp']);
     }
 
     /**
      * Create Airlines.
-     * 
+     *
      * @response array{status: string, message: string}
      */
     public function store(MstAirlines $request)
     {
 
-       $request->validated();
-       return response()
+        $request->validated();
+
+        return response()
             ->json(['status' => 'ok', 'message' => 'Succsess create data']);
     }
 
     /**
      * Display the specified resource.
-     * 
+     *
      * @response array{data:airlines[]}
      */
     public function show(string $id)
@@ -56,12 +60,13 @@ class MstAirlinesController extends Controller
 
     /**
      * Update the specified resource in storage.
-     * 
+     *
      * @response array{status: string, message: string}
      */
     public function update(MstAirlines $request, string $id)
     {
-        $status = $this->airlines->update($request->all(),$id);
+        $status = $this->airlines->update($request->all(), $id);
+
         return response()
             ->json(['status' => $status, 'message' => 'Succsess update data']);
     }

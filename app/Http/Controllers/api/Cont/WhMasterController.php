@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group WhMasterController
  *
  * APIs for App\Http\Controllers\api\Cont\WhMasterController::class
- * 
  */
-
 class WhMasterController extends Controller
 {
     /**
      * GET WhMasterController
-     * 
      */
     public function index()
     {

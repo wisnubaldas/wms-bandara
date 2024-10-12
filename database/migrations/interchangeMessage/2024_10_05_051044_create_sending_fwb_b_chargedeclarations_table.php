@@ -26,7 +26,7 @@ class CreateSendingFwbBChargedeclarationsTable extends Migration
             $table->string('DeclaredValueForCustoms', 12)->nullable();
             $table->string('AmountOfInsurance', 11)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

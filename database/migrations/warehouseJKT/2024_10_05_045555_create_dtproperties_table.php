@@ -21,7 +21,7 @@ class CreateDtpropertiesTable extends Migration
             $table->string('uvalue')->nullable();
             $table->longblob('lvalue')->nullable();
             $table->integer('version')->default(0);
-            
+
             $table->primary(['id', 'property']);
         });
     }

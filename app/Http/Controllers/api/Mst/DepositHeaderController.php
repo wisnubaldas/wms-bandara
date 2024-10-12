@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DepositHeaderController
  *
  * APIs for App\Http\Controllers\api\Mst\DepositHeaderController::class
- * 
  */
-
 class DepositHeaderController extends Controller
 {
     /**
      * GET DepositHeaderController
-     * 
      */
     public function index()
     {

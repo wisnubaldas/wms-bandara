@@ -21,7 +21,7 @@ class CreateSendingFwbNSalesincentiveinformationTable extends Migration
             $table->string('ChargeAmount', 12)->nullable();
             $table->string('CASSIndicator', 2)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

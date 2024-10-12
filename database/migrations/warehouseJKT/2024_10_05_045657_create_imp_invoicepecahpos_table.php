@@ -38,7 +38,7 @@ class CreateImpInvoicepecahposTable extends Migration
             $table->timestamp('created_at')->default('current_timestamp()')->index('created_at');
             $table->string('type_inv', 4)->default('POS')->index('type_inv');
             $table->string('TaxNumber', 19)->nullable();
-            
+
             $table->primary(['noid', 'DateOfTransaction']);
         });
     }

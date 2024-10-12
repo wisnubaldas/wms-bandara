@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group MinchangesController
  *
  * APIs for App\Http\Controllers\api\Fare\MinchangesController::class
- * 
  */
-
 class MinchangesController extends Controller
 {
     /**
      * GET MinchangesController
-     * 
      */
     public function index()
     {

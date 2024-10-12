@@ -59,9 +59,9 @@ class CreateGetImpInSysLamaTable extends Migration
             $table->timestamp('date_create')->default('current_timestamp()');
             $table->dateTime('date_update');
             $table->boolean('flag_gateout')->default(0)->index('flag_gateout');
-            $table->text('respon')->comment(" ");
+            $table->text('respon')->comment(' ');
             $table->string('token', 5)->nullable();
-            
+
             $table->index(['no_bl_awb', 'flag_transfer', 'flag_gateout'], 'no_bl_awb');
         });
     }

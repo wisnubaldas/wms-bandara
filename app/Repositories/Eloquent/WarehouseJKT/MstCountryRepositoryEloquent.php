@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\WarehouseJKT;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\WarehouseJKT\MstCountryRepository;
 use App\Models\WarehouseJKT\MstCountry;
-use App\Validators\WarehouseJKT\MstCountryValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class MstCountryRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\WarehouseJKT;
  */
 class MstCountryRepositoryEloquent extends BaseRepository implements MstCountryRepository
 {
@@ -25,8 +22,6 @@ class MstCountryRepositoryEloquent extends BaseRepository implements MstCountryR
         return MstCountry::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class MstCountryRepositoryEloquent extends BaseRepository implements MstCountryR
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

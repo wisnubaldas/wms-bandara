@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ExpOutController
  *
  * APIs for App\Http\Controllers\api\Gate\ExpOutController::class
- * 
  */
-
 class ExpOutController extends Controller
 {
     /**
      * GET ExpOutController
-     * 
      */
     public function index()
     {

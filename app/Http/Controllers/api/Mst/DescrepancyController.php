@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DescrepancyController
  *
  * APIs for App\Http\Controllers\api\Mst\DescrepancyController::class
- * 
  */
-
 class DescrepancyController extends Controller
 {
     /**
      * GET DescrepancyController
-     * 
      */
     public function index()
     {

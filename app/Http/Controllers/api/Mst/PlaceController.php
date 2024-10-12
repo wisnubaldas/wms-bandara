@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group PlaceController
  *
  * APIs for App\Http\Controllers\api\Mst\PlaceController::class
- * 
  */
-
 class PlaceController extends Controller
 {
     /**
      * GET PlaceController
-     * 
      */
     public function index()
     {

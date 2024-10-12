@@ -19,7 +19,7 @@ class CreateMNatureofgoodTable extends Migration
             $table->string('nat_description', 45);
             $table->unsignedTinyInteger('void')->default(0);
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['_id', 'nat_code']);
         });
     }

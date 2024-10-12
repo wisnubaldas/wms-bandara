@@ -24,7 +24,7 @@ class CreateSendingFwbJChargerindestinationcurrencyTable extends Migration
             $table->string('ChargeAmountAtDestination', 12)->nullable();
             $table->string('ChargeAmountTotalCollect', 12)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

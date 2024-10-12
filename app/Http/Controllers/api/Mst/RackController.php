@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group RackController
  *
  * APIs for App\Http\Controllers\api\Mst\RackController::class
- * 
  */
-
 class RackController extends Controller
 {
     /**
      * GET RackController
-     * 
      */
     public function index()
     {

@@ -29,7 +29,7 @@ class MstBeacukai extends FormRequest
             'Eselon' => ['required', 'string', 'min:1', 'max:6'],
             'NamaProgram' => ['required', 'string', 'min:1', 'max:3'],
             'Registrasi' => ['required', 'string', 'min:1', 'max:6'],
-            'void' => ['required', 'integer', 'min:0', 'max:255']
+            'void' => ['required', 'integer', 'min:0', 'max:255'],
         ];
     }
 }

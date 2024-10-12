@@ -30,7 +30,7 @@ class CreateSendingFwb2AwbconsignmentdetailsTable extends Migration
             $table->string('DensityIndicator', 2)->nullable();
             $table->string('DensityGroup', 2)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

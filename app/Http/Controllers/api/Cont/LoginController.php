@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group LoginController
- *
  */
-
 class LoginController extends Controller
 {
     /**
      * GET LoginController
-     * 
      */
     public function index()
     {

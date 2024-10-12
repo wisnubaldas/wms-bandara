@@ -22,7 +22,7 @@ class CreateMenusTable extends Migration
             $table->integer('number');
             $table->dateTime('create_at')->nullable();
             $table->dateTime('update_at')->nullable();
-            
+
             $table->foreign('parent', 'menus_ibfk_1')->references('id')->on('menus');
         });
     }

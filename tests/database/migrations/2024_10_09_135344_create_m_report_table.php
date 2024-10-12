@@ -16,7 +16,7 @@ class CreateMReportTable extends Migration
         Schema::create('m_report', function (Blueprint $table) {
             $table->integer('_id');
             $table->string('TypeReport', 20);
-            
+
             $table->primary(['_id', 'TypeReport']);
         });
     }

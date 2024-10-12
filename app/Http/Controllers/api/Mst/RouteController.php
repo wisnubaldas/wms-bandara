@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group RouteController
  *
  * APIs for App\Http\Controllers\api\Mst\RouteController::class
- * 
  */
-
 class RouteController extends Controller
 {
     /**
      * GET RouteController
-     * 
      */
     public function index()
     {

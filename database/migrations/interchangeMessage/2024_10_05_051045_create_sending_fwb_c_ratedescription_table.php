@@ -75,7 +75,7 @@ class CreateSendingFwbCRatedescriptionTable extends Migration
             $table->string('CountryCode', 2)->nullable();
             $table->string('ServiceCode', 1)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

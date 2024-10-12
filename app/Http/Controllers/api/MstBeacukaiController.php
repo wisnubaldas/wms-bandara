@@ -3,23 +3,26 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Repositories\Eloquent\WarehouseJKT\MstBeacukaiRepositoryEloquent;
+use Illuminate\Http\Request;
+
 /**
  * @group MstBeacukaiController
  *
  * APIs for All Master Controller
- * 
  */
 class MstBeacukaiController extends Controller
 {
     protected $bc;
-    public function __construct(MstBeacukaiRepositoryEloquent $bc) {
+
+    public function __construct(MstBeacukaiRepositoryEloquent $bc)
+    {
         $this->bc = $bc;
     }
+
     /**
      * Display a listing of the resource.
-     * 
+     *
      * @response array{data:MstBeacukaiRepositoryEloquent[]}
      */
     public function index()

@@ -25,7 +25,7 @@ class ThOutbond extends Model
     // {
     //     return 'Arrival at Incoming warehouse';
     // }
-    // // static value untuk model   
+    // // static value untuk model
     // public static function booted()
     // {
     //     parent::boot();

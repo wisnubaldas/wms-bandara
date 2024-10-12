@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ScheduleController
  *
  * APIs for App\Http\Controllers\api\Ekspor\ScheduleController::class
- * 
  */
-
 class ScheduleController extends Controller
 {
     /**
      * GET ScheduleController
-     * 
      */
     public function index()
     {

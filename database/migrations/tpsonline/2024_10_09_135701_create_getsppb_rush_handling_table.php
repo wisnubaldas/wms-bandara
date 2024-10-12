@@ -47,7 +47,7 @@ class CreateGetsppbRushHandlingTable extends Migration
             $table->string('FL_SEGEL', 10)->nullable();
             $table->integer('xml_code')->nullable()->index('xml_code');
             $table->timestamp('created_at')->nullable()->default('current_timestamp()');
-            
+
             $table->primary(['noid', 'CAR', 'NO_VOY_FLIGHT']);
         });
     }

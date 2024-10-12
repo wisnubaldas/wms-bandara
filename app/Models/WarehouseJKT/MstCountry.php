@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class MstCountry extends Model
 {
     use HasFactory;
+
     protected $connection = 'rdwarehouse_jkt';
+
     protected $table = 'mst_country';
+
     protected $primaryKey = 'Noid';
     // public $incrementing = false;
     // protected $keyType = 'string';
@@ -25,7 +28,7 @@ class MstCountry extends Model
     // {
     //     return 'Arrival at Incoming warehouse';
     // }
-    // // static value untuk model   
+    // // static value untuk model
     // public static function booted()
     // {
     //     parent::boot();
@@ -37,5 +40,5 @@ class MstCountry extends Model
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = ["Noid","CountryCode","CountryName","void","created_at"];
+    protected $fillable = ['Noid', 'CountryCode', 'CountryName', 'void', 'created_at'];
 }

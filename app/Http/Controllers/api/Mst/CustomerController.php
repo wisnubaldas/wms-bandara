@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group CustomerController
  *
  * APIs for App\Http\Controllers\api\Mst\CustomerController::class
- * 
  */
-
 class CustomerController extends Controller
 {
     /**
      * GET CustomerController
-     * 
      */
     public function index()
     {

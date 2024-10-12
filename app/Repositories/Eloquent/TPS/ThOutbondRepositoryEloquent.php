@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\TPS;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\TPS\ThOutbondRepository;
 use App\Models\TPS\ThOutbond;
-use App\Validators\TPS\ThOutbondValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class ThOutbondRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\TPS;
  */
 class ThOutbondRepositoryEloquent extends BaseRepository implements ThOutbondRepository
 {
@@ -25,8 +22,6 @@ class ThOutbondRepositoryEloquent extends BaseRepository implements ThOutbondRep
         return ThOutbond::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class ThOutbondRepositoryEloquent extends BaseRepository implements ThOutbondRep
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

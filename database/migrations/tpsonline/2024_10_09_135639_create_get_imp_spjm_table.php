@@ -37,7 +37,7 @@ class CreateGetImpSpjmTable extends Migration
             $table->boolean('void')->default(0);
             $table->integer('xml_code')->nullable();
             $table->timestamp('created_at')->nullable()->default('current_timestamp()');
-            
+
             $table->primary(['noid', 'CAR']);
         });
     }

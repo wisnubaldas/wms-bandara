@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group HostAwbController
  *
  * APIs for App\Http\Controllers\api\Ekspor\HostAwbController::class
- * 
  */
-
 class HostAwbController extends Controller
 {
     /**
      * GET HostAwbController
-     * 
      */
     public function index()
     {

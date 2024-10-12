@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\WarehouseJKT;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\WarehouseJKT\MstBeacukaiRepository;
 use App\Models\WarehouseJKT\MstBeacukai;
-use App\Validators\WarehouseJKT\MstBeacukaiValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class MstBeacukaiRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\WarehouseJKT;
  */
 class MstBeacukaiRepositoryEloquent extends BaseRepository implements MstBeacukaiRepository
 {
@@ -25,8 +22,6 @@ class MstBeacukaiRepositoryEloquent extends BaseRepository implements MstBeacuka
         return MstBeacukai::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class MstBeacukaiRepositoryEloquent extends BaseRepository implements MstBeacuka
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

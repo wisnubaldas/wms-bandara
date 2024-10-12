@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group PodHeaderController
  *
  * APIs for App\Http\Controllers\api\Impor\PodHeaderController::class
- * 
  */
-
 class PodHeaderController extends Controller
 {
     /**
      * GET PodHeaderController
-     * 
      */
     public function index()
     {

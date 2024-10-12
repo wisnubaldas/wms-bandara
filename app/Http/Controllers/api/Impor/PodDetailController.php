@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group PodDetailController
  *
  * APIs for App\Http\Controllers\api\Impor\PodDetailController::class
- * 
  */
-
 class PodDetailController extends Controller
 {
     /**
      * GET PodDetailController
-     * 
      */
     public function index()
     {

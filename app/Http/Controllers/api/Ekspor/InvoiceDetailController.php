@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group InvoiceDetailController
  *
  * APIs for App\Http\Controllers\api\Ekspor\InvoiceDetailController::class
- * 
  */
-
 class InvoiceDetailController extends Controller
 {
     /**
      * GET InvoiceDetailController
-     * 
      */
     public function index()
     {

@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group InvoiceHeaderController
  *
  * APIs for App\Http\Controllers\api\Impor\InvoiceHeaderController::class
- * 
  */
-
 class InvoiceHeaderController extends Controller
 {
     /**
      * GET InvoiceHeaderController
-     * 
      */
     public function index()
     {

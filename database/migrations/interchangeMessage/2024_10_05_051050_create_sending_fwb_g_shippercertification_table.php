@@ -20,7 +20,7 @@ class CreateSendingFwbGShippercertificationTable extends Migration
             $table->string('LineIdentifier', 3)->nullable();
             $table->string('Signature', 20)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

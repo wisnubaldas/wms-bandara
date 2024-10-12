@@ -23,7 +23,7 @@ class CreateEksHistoryTable extends Migration
             $table->string('NumberCode', 20)->nullable();
             $table->string('token', 5)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->index(['DateOfHistory', 'TimeOfHistory'], 'DatetimeHistory');
         });
     }

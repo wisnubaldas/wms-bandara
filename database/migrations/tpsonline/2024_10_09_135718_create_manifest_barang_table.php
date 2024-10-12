@@ -21,7 +21,7 @@ class CreateManifestBarangTable extends Migration
             $table->string('hs_code', 8)->nullable();
             $table->string('uraian_barang', 200)->nullable();
             $table->string('token', 5)->nullable()->index('token');
-            
+
             $table->primary(['id', 'id_barang']);
         });
     }

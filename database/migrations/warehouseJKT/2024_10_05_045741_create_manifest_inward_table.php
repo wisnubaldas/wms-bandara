@@ -81,7 +81,7 @@ class CreateManifestInwardTable extends Migration
             $table->boolean('void')->default(0);
             $table->string('token', 5)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['Noid', 'FlightNo']);
         });
     }

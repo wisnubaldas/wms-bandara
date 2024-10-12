@@ -21,7 +21,7 @@ class CreateSendingFwbQNominatedhandlingpartyTable extends Migration
             $table->string('Name', 35)->nullable();
             $table->string('Place', 17)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

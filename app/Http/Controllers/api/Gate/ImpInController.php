@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ImpInController
  *
  * APIs for App\Http\Controllers\api\Gate\ImpInController::class
- * 
  */
-
 class ImpInController extends Controller
 {
     /**
      * GET ImpInController
-     * 
      */
     public function index()
     {

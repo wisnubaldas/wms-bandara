@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group LocationMpsController
  *
  * APIs for App\Http\Controllers\api\Impor\LocationMpsController::class
- * 
  */
-
 class LocationMpsController extends Controller
 {
     /**
      * GET LocationMpsController
-     * 
      */
     public function index()
     {

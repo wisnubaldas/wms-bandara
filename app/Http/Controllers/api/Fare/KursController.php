@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group KursController
  *
  * APIs for App\Http\Controllers\api\Fare\KursController::class
- * 
  */
-
 class KursController extends Controller
 {
     /**
      * GET KursController
-     * 
      */
     public function index()
     {

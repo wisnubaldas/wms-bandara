@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group WarehouseController
  *
  * APIs for App\Http\Controllers\api\Mst\WarehouseController::class
- * 
  */
-
 class WarehouseController extends Controller
 {
     /**
      * GET WarehouseController
-     * 
      */
     public function index()
     {

@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group WeighingVolController
  *
  * APIs for App\Http\Controllers\api\Ekspor\WeighingVolController::class
- * 
  */
-
 class WeighingVolController extends Controller
 {
     /**
      * GET WeighingVolController
-     * 
      */
     public function index()
     {

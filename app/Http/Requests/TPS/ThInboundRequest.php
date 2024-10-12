@@ -3,6 +3,7 @@
 namespace App\Http\Requests\TPS;
 
 use Illuminate\Foundation\Http\FormRequest;
+
 /**
  * @bodyParam tps string required tps data.
  * @bodyParam gate_type string required gate_type data in:import,incoming,transit.
@@ -21,7 +22,6 @@ use Illuminate\Foundation\Http\FormRequest;
  * @bodyParam consignee_name string required consignee_name data.
  * @bodyParam _is_active boolean required _is_active data.
  * @bodyParam full_check boolean required full_check data.
- * 
  */
 class ThInboundRequest extends FormRequest
 {
@@ -61,7 +61,7 @@ class ThInboundRequest extends FormRequest
             '_updated_by' => ['nullable', 'string', 'min:1', 'max:120'],
             '_remarks_last_update' => ['nullable', 'string', 'min:1'],
             'key_upload' => ['nullable', 'integer'],
-            'full_check' => ['required', 'boolean']
+            'full_check' => ['required', 'boolean'],
         ];
     }
 }

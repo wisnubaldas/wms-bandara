@@ -21,7 +21,7 @@ class CreateSendingFwbAAccountinginformationTable extends Migration
             $table->string('AccountingInformationIdentifier', 3)->nullable();
             $table->string('AccountingInformation', 34)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

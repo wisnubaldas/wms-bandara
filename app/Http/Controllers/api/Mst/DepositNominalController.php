@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DepositNominalController
  *
  * APIs for App\Http\Controllers\api\Mst\DepositNominalController::class
- * 
  */
-
 class DepositNominalController extends Controller
 {
     /**
      * GET DepositNominalController
-     * 
      */
     public function index()
     {

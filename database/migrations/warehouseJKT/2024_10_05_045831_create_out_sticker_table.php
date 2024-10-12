@@ -29,7 +29,7 @@ class CreateOutStickerTable extends Migration
             $table->boolean('void')->default(0);
             $table->timestamp('created_at')->default('current_timestamp()');
             $table->timestamp('modify_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'Pallete']);
         });
     }

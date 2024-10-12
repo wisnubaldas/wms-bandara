@@ -24,7 +24,7 @@ class CreateTTransStorageTable extends Migration
             $table->string('order_no', 15)->nullable();
             $table->bigInteger('id_invoice')->nullable();
             $table->string('invoice_no', 15)->nullable();
-            $table->enum('flag_status', ['O', 'C', 'M'])->nullable()->comment("OPEN/CLOSE/MOVE");
+            $table->enum('flag_status', ['O', 'C', 'M'])->nullable()->comment('OPEN/CLOSE/MOVE');
             $table->boolean('void')->default(0);
             $table->timestamp('created_at')->default('current_timestamp()');
             $table->timestamp('update_at')->nullable()->default('current_timestamp()');

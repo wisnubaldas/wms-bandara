@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group HarmonizedController
  *
  * APIs for App\Http\Controllers\api\Mst\HarmonizedController::class
- * 
  */
-
 class HarmonizedController extends Controller
 {
     /**
      * GET HarmonizedController
-     * 
      */
     public function index()
     {

@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ObDetailController
  *
  * APIs for App\Http\Controllers\api\Impor\ObDetailController::class
- * 
  */
-
 class ObDetailController extends Controller
 {
     /**
      * GET ObDetailController
-     * 
      */
     public function index()
     {

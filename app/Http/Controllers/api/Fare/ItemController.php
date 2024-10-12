@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ItemController
  *
  * APIs for App\Http\Controllers\api\Fare\ItemController::class
- * 
  */
-
 class ItemController extends Controller
 {
     /**
      * GET ItemController
-     * 
      */
     public function index()
     {

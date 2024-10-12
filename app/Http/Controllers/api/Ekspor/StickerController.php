@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group StickerController
  *
  * APIs for App\Http\Controllers\api\Ekspor\StickerController::class
- * 
  */
-
 class StickerController extends Controller
 {
     /**
      * GET StickerController
-     * 
      */
     public function index()
     {

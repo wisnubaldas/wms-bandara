@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group ManifestController
- *
  */
-
 class ManifestController extends Controller
 {
     /**
      * GET ManifestController
-     * 
      */
     public function index()
     {

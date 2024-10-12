@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ApprovalController
  *
  * APIs for App\Http\Controllers\api\Ekspor\ApprovalController::class
- * 
  */
-
 class ApprovalController extends Controller
 {
     /**
      * GET ApprovalController
-     * 
      */
     public function index()
     {

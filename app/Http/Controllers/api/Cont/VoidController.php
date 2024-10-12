@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group VoidController
  *
  * APIs for App\Http\Controllers\api\Cont\VoidController::class
- * 
  */
-
 class VoidController extends Controller
 {
     /**
      * GET VoidController
-     * 
      */
     public function index()
     {

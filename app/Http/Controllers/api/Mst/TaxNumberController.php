@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group TaxNumberController
  *
  * APIs for App\Http\Controllers\api\Mst\TaxNumberController::class
- * 
  */
-
 class TaxNumberController extends Controller
 {
     /**
      * GET TaxNumberController
-     * 
      */
     public function index()
     {

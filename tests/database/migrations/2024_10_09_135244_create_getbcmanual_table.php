@@ -18,7 +18,7 @@ class CreateGetbcmanualTable extends Migration
             $table->string('KD_KANTOR', 10)->nullable();
             $table->string('NO_BL_AWB', 30)->nullable();
             $table->string('NO_MASTER_BL_AWB', 15)->nullable();
-            $table->string('NM_IMP', 50)->nullable()->comment("NAMA IMPORTIR ATAU EKSPORTIR");
+            $table->string('NM_IMP', 50)->nullable()->comment('NAMA IMPORTIR ATAU EKSPORTIR');
             $table->string('KD_DOK_INOUT', 5)->nullable();
             $table->string('NO_DOK_INOUT', 40)->nullable();
             $table->string('TGL_DOK_INOUT', 10)->nullable();

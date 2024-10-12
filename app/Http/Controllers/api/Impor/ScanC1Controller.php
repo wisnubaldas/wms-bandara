@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ScanC1Controller
  *
  * APIs for App\Http\Controllers\api\Impor\ScanC1Controller::class
- * 
  */
-
 class ScanC1Controller extends Controller
 {
     /**
      * GET ScanC1Controller
-     * 
      */
     public function index()
     {

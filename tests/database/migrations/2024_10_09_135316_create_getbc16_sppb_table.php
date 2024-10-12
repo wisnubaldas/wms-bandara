@@ -50,7 +50,7 @@ class CreateGetbc16SppbTable extends Migration
             $table->string('FL_SEGEL', 30)->nullable();
             $table->integer('xml_code')->nullable()->index('xml_code');
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['noid', 'CAR']);
         });
     }

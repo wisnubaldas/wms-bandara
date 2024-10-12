@@ -16,7 +16,7 @@ class CreateMstNumberInvoiceTable extends Migration
         Schema::create('mst_number_invoice', function (Blueprint $table) {
             $table->bigInteger('id')->primary();
             $table->string('nomor_invoice', 18)->nullable();
-            $table->boolean('flag_pakai')->default(0)->comment("1=import,2=ekspor,3=outgoing,4=incoming,5=lain-lain");
+            $table->boolean('flag_pakai')->default(0)->comment('1=import,2=ekspor,3=outgoing,4=incoming,5=lain-lain');
         });
     }
 

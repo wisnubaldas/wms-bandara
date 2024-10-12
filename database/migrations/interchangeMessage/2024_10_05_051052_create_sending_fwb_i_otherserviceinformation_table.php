@@ -20,7 +20,7 @@ class CreateSendingFwbIOtherserviceinformationTable extends Migration
             $table->string('LineIdentifier', 3)->nullable();
             $table->string('OtherServiceInformation', 65)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

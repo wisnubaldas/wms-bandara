@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group OperatorWhController
  *
  * APIs for App\Http\Controllers\api\Mst\OperatorWhController::class
- * 
  */
-
 class OperatorWhController extends Controller
 {
     /**
      * GET OperatorWhController
-     * 
      */
     public function index()
     {

@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group GseController
  *
  * APIs for App\Http\Controllers\api\Mst\GseController::class
- * 
  */
-
 class GseController extends Controller
 {
     /**
      * GET GseController
-     * 
      */
     public function index()
     {

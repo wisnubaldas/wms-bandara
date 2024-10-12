@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group RubahController
  *
  * APIs for App\Http\Controllers\api\Cont\RubahController::class
- * 
  */
-
 class RubahController extends Controller
 {
     /**
      * GET RubahController
-     * 
      */
     public function index()
     {

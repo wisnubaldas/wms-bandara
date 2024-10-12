@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group AgreeController
  *
  * APIs for App\Http\Controllers\api\Fare\AgreeController::class
- * 
  */
-
 class AgreeController extends Controller
 {
     /**
      * GET AgreeController
-     * 
      */
     public function index()
     {

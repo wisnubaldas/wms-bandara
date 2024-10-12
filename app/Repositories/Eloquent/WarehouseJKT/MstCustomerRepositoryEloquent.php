@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\WarehouseJKT;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\WarehouseJKT\MstCustomerRepository;
 use App\Models\WarehouseJKT\MstCustomer;
-use App\Validators\WarehouseJKT\MstCustomerValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class MstCustomerRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\WarehouseJKT;
  */
 class MstCustomerRepositoryEloquent extends BaseRepository implements MstCustomerRepository
 {
@@ -25,8 +22,6 @@ class MstCustomerRepositoryEloquent extends BaseRepository implements MstCustome
         return MstCustomer::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class MstCustomerRepositoryEloquent extends BaseRepository implements MstCustome
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

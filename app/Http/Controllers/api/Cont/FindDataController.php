@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group FindDataController
- *
  */
-
 class FindDataController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
      */
     public function index()
     {

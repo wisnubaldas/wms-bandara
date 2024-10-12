@@ -35,7 +35,7 @@ class MstAirlines extends FormRequest
             'flag_import' => ['required', 'boolean'],
             'flag_outgoing' => ['required', 'boolean'],
             'flag_incoming' => ['required', 'boolean'],
-            'flag_plp' => ['required', 'boolean']
+            'flag_plp' => ['required', 'boolean'],
         ];
     }
 }

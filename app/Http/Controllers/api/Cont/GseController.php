@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group GseController
- *
  */
-
 class GseController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
      */
     public function index()
     {

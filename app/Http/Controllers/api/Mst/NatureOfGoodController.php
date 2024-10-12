@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group NatureOfGoodController
  *
  * APIs for App\Http\Controllers\api\Mst\NatureOfGoodController::class
- * 
  */
-
 class NatureOfGoodController extends Controller
 {
     /**
      * GET NatureOfGoodController
-     * 
      */
     public function index()
     {

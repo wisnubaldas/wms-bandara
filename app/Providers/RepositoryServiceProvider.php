@@ -19,7 +19,7 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        
+
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstAirlinesRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstAirlinesRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstArrivalRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstBeacukaiRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstBeacukaiRepositoryEloquent::class);
@@ -28,10 +28,6 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstDepartureRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstDepartureRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstCountryRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstCountryRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\TPS\ThInboundRepository::class, \App\Repositories\Eloquent\TPS\ThInboundRepositoryEloquent::class);
-        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
-        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
-        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
-        $this->app->bind(\App\Contracts\Repositories\TPS\ThOutbondRepository::class, \App\Repositories\Eloquent\TPS\ThOutbondRepositoryEloquent::class);
         //:end-bindings:
     }
 }

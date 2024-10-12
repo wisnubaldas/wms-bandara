@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\WarehouseJKT;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\WarehouseJKT\MstArrivalRepository;
 use App\Models\WarehouseJKT\MstArrival;
-use App\Validators\WarehouseJKT\MstArrivalValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class MstArrivalRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\WarehouseJKT;
  */
 class MstArrivalRepositoryEloquent extends BaseRepository implements MstArrivalRepository
 {
@@ -25,8 +22,6 @@ class MstArrivalRepositoryEloquent extends BaseRepository implements MstArrivalR
         return MstArrival::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class MstArrivalRepositoryEloquent extends BaseRepository implements MstArrivalR
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group ImportController
- *
  */
-
 class ImportController extends Controller
 {
     /**
      * GET ImportController
-     * 
      */
     public function index()
     {

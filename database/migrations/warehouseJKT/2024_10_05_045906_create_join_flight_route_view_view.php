@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
 
 class CreateJoinFlightRouteViewView extends Migration
 {
@@ -29,14 +27,14 @@ class CreateJoinFlightRouteViewView extends Migration
 
     private function createView()
     {
-        return <<<SQL
+        return <<<'SQL'
             CREATE VIEW `join_flight_route_view` AS select distinct `a`.`WarehouseCode` AS `WarehouseCode`,`a`.`TwoLetterCode` AS `TwoLetterCode`,`a`.`FlightNumber` AS `FlightNumber`,`a`.`TimeDeparture` AS `TimeDeparture`,`a`.`TimeArrival` AS `TimeArrival`,`b`.`Route` AS `Route` from (`mst_flight` `a` join `mst_route` `b` on(`a`.`TwoLetterCode` = `b`.`TwoLetterCode` and `a`.`WarehouseCode` = `b`.`WarehouseCode`)) where `a`.`Void` = 0 and `b`.`Void` = 0
         SQL;
     }
 
     private function dropView()
     {
-        return <<<SQL
+        return <<<'SQL'
             DROP VIEW IF EXISTS `join_flight_route_view`;
         SQL;
     }

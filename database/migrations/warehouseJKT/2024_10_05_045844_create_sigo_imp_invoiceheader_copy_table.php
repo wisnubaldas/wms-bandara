@@ -51,7 +51,7 @@ class CreateSigoImpInvoiceheaderCopyTable extends Migration
             $table->integer('void')->default(0);
             $table->string('token', 5)->nullable()->index('token');
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['noid', 'InvoiceNumber']);
         });
     }

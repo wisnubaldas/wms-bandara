@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group HistoryController
  *
  * APIs for App\Http\Controllers\api\Mst\HistoryController::class
- * 
  */
-
 class HistoryController extends Controller
 {
     /**
      * GET HistoryController
-     * 
      */
     public function index()
     {

@@ -22,7 +22,7 @@ class CreateSendingFwb3FlightbookingsTable extends Migration
             $table->string('FlightNumber', 5)->nullable();
             $table->string('DayFlightBookings', 2)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

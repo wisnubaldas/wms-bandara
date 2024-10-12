@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group BookingController
  *
  * APIs for App\Http\Controllers\api\Ekspor\BookingController::class
- * 
  */
-
 class BookingController extends Controller
 {
     /**
      * GET BookingController
-     * 
      */
     public function index()
     {

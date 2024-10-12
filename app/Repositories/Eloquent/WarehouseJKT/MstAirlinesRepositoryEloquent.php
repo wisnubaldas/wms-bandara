@@ -2,19 +2,16 @@
 
 namespace App\Repositories\Eloquent\WarehouseJKT;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\WarehouseJKT\MstAirlinesRepository;
 use App\Models\WarehouseJKT\MstAirlines;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class MstAirlinesRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\WarehouseJKT;
  */
 class MstAirlinesRepositoryEloquent extends BaseRepository implements MstAirlinesRepository
 {
-    
     /**
      * Specify Model class name
      *
@@ -25,8 +22,6 @@ class MstAirlinesRepositoryEloquent extends BaseRepository implements MstAirline
         return MstAirlines::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class MstAirlinesRepositoryEloquent extends BaseRepository implements MstAirline
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group ImpOutController
  *
  * APIs for App\Http\Controllers\api\Gate\ImpOutController::class
- * 
  */
-
 class ImpOutController extends Controller
 {
     /**
      * GET ImpOutController
-     * 
      */
     public function index()
     {

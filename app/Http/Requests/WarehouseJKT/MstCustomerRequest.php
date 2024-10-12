@@ -43,7 +43,7 @@ class MstCustomerRequest extends FormRequest
             'int_member' => ['required', 'boolean'],
             'DateEntry' => ['nullable', 'string', 'min:1', 'max:10'],
             'TimeEntry' => ['nullable', 'string', 'min:1', 'max:8'],
-            'void' => ['required', 'boolean']
+            'void' => ['required', 'boolean'],
         ];
     }
 }

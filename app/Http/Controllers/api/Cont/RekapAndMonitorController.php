@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group RekapAndMonitorController
- *
  */
-
 class RekapAndMonitorController extends Controller
 {
     /**
      * GET RekapAndMonitorController
-     * 
      */
     public function index()
     {

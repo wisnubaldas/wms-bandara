@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class MstCustomer extends Model
 {
     use HasFactory;
+
     protected $connection = 'rdwarehouse_jkt';
+
     protected $table = 'mst_customer';
+
     protected $primaryKey = '_id';
     // public $incrementing = false;
     // protected $keyType = 'string';
@@ -25,7 +28,7 @@ class MstCustomer extends Model
     // {
     //     return 'Arrival at Incoming warehouse';
     // }
-    // // static value untuk model   
+    // // static value untuk model
     // public static function booted()
     // {
     //     parent::boot();
@@ -37,5 +40,5 @@ class MstCustomer extends Model
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = ["_id","CustomerCode","CompanyName","PICName","Address1","Address2","City","PostCode","CountryCode","MobileNumber","FaxNumber","Phonenumber","EmailAddress","NPWPNumber","ContactIdentifier","ContactNumber","EmployeeNumber","flag_faktur","Dom_member","int_member","DateEntry","TimeEntry","void","created_at"];
+    protected $fillable = ['_id', 'CustomerCode', 'CompanyName', 'PICName', 'Address1', 'Address2', 'City', 'PostCode', 'CountryCode', 'MobileNumber', 'FaxNumber', 'Phonenumber', 'EmailAddress', 'NPWPNumber', 'ContactIdentifier', 'ContactNumber', 'EmployeeNumber', 'flag_faktur', 'Dom_member', 'int_member', 'DateEntry', 'TimeEntry', 'void', 'created_at'];
 }

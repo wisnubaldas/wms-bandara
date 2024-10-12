@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group NumberController
  *
  * APIs for App\Http\Controllers\api\Mst\NumberController::class
- * 
  */
-
 class NumberController extends Controller
 {
     /**
      * GET NumberController
-     * 
      */
     public function index()
     {

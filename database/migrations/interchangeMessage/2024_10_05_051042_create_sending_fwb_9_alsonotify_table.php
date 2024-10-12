@@ -27,7 +27,7 @@ class CreateSendingFwb9AlsonotifyTable extends Migration
             $table->string('ContactIdentifier', 3)->nullable();
             $table->string('ContactNumber', 25)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

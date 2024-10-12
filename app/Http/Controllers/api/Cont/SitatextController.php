@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group SitatextController
  *
  * APIs for App\Http\Controllers\api\Cont\SitatextController::class
- * 
  */
-
 class SitatextController extends Controller
 {
     /**
      * GET SitatextController
-     * 
      */
     public function index()
     {

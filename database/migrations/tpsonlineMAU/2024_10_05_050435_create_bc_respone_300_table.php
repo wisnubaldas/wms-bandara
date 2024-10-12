@@ -34,7 +34,7 @@ class CreateBcRespone300Table extends Migration
             $table->timestamps();
             $table->integer('flag')->nullable();
             $table->bigInteger('id_manifest')->nullable();
-            
+
             $table->unique(['NO_BARANG', 'KD_RESPON', 'WK_REKAM'], 'gabungan');
         });
     }

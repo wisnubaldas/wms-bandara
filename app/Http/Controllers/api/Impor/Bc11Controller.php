@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group Bc11Controller
  *
  * APIs for App\Http\Controllers\api\Impor\Bc11Controller::class
- * 
  */
-
 class Bc11Controller extends Controller
 {
     /**
      * GET Bc11Controller
-     * 
      */
     public function index()
     {

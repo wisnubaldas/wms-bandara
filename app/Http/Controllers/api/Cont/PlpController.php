@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group PlpController
- *
  */
-
 class PlpController extends Controller
 {
     /**
      * GET PlpController
-     * 
      */
     public function index()
     {

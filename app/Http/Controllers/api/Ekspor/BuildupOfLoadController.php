@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group BuildupOfLoadController
  *
  * APIs for App\Http\Controllers\api\Ekspor\BuildupOfLoadController::class
- * 
  */
-
 class BuildupOfLoadController extends Controller
 {
     /**
      * GET BuildupOfLoadController
-     * 
      */
     public function index()
     {

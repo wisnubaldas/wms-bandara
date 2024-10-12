@@ -22,7 +22,7 @@ class CreateMohonRespPlpTable extends Migration
             $table->string('gudang_asal', 4)->nullable();
             $table->string('gudang_tujuan', 4)->nullable();
             $table->string('no_plp', 30)->nullable();
-            $table->string('tgl_plp', 8)->nullable()->comment("yyyyMMdd");
+            $table->string('tgl_plp', 8)->nullable()->comment('yyyyMMdd');
             $table->string('alasan_reject', 150)->nullable();
             $table->string('call_sign', 2)->nullable();
             $table->string('nm_angkut', 30)->nullable();

@@ -3,30 +3,32 @@
 namespace App\Http\Controllers\api;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent;
 use App\Http\Requests\WarehouseJKT\MstArrival;
+use App\Repositories\Eloquent\WarehouseJKT\MstArrivalRepositoryEloquent;
+
 /**
  * @group MstArrivalController
  *
  * APIs for All Master Controller
- * 
  */
 class MstArrivalController extends Controller
 {
     protected $arrival;
-    public function __construct(MstArrivalRepositoryEloquent $arrival) {
+
+    public function __construct(MstArrivalRepositoryEloquent $arrival)
+    {
         $this->arrival = $arrival;
     }
+
     /**
      * Display a listing of the resource.
-     * 
+     *
      * @response array{data:MstArrivalRepositoryEloquent[]}
      */
     public function index()
     {
         return $this->arrival->paginate(10);
-        
+
     }
 
     /**

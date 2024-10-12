@@ -25,7 +25,7 @@ class CreateSendingFhl1StandardmessageindentificationTable extends Migration
             $table->string('Manual', 1)->default('0')->index('_WA_Sys_Manual_74AE54BC');
             $table->integer('MessageSent')->default(0)->index('_WA_Sys_MessageSent_74AE54BC');
             $table->timestamp('create_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

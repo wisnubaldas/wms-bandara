@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group MasterWaybillController
  *
  * APIs for App\Http\Controllers\api\Impor\MasterWaybillController::class
- * 
  */
-
 class MasterWaybillController extends Controller
 {
     /**
      * GET MasterWaybillController
-     * 
      */
     public function index()
     {

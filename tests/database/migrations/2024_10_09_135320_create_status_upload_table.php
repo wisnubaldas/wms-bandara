@@ -21,7 +21,7 @@ class CreateStatusUploadTable extends Migration
             $table->integer('cron_status')->nullable()->comment("0 = file disimpan didirectory & sedang diproses, \r\n1 = transfer file / insert selesai, \r\n2 = done,\r\n--------------------------------------------\r\n9 = gagal / jml sheet tidak sesuai\r\n11 = gagal proses import / proses insert");
             $table->integer('user')->nullable();
             $table->text('add_info')->nullable();
-            $table->integer('key_upload')->nullable()->comment("No. upload (untuk info di header)");
+            $table->integer('key_upload')->nullable()->comment('No. upload (untuk info di header)');
             $table->timestamps();
         });
     }

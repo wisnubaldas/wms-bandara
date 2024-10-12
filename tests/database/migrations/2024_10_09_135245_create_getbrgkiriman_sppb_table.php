@@ -49,7 +49,7 @@ class CreateGetbrgkirimanSppbTable extends Migration
             $table->bigInteger('xml_code')->nullable()->index('xml_code');
             $table->timestamp('created_at')->default('current_timestamp()');
             $table->boolean('flag_out')->default(0);
-            
+
             $table->primary(['noid', 'CAR']);
         });
     }

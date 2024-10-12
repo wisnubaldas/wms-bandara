@@ -8,8 +8,6 @@ use Prettus\Repository\Traits\TransformableTrait;
 
 /**
  * Class MstAirlines.
- *
- * @package namespace App\Models\WarehouseJKT;
  */
 class MstAirlines extends Model implements Transformable
 {
@@ -21,11 +19,14 @@ class MstAirlines extends Model implements Transformable
      * @var array
      */
     protected $connection = 'rdwarehouse_jkt';
+
     protected $table = 'mst_airlines';
+
     protected $primaryKey = 'Noid';
+
     // public $incrementing = false;
     // protected $keyType = 'string';
-     public $timestamps = false;
+    public $timestamps = false;
     // const CREATED_AT = 'date_create';
     // const UPDATED_AT = 'date_update';
     // protected $appends = ['code', 'status'];
@@ -37,7 +38,7 @@ class MstAirlines extends Model implements Transformable
     // {
     //     return 'Arrival at Incoming warehouse';
     // }
-    // // static value untuk model   
+    // // static value untuk model
     // public static function booted()
     // {
     //     parent::boot();
@@ -49,6 +50,5 @@ class MstAirlines extends Model implements Transformable
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = ["Noid", "TwoLetterCode", "ThreeLetterCode", "AirlinesName", "CountryCode", "Actived", "Void", "KodeGudangByCustom", "WHcode", "activeGud", "flag_ekspor", "flag_import", "flag_outgoing", "flag_incoming", "flag_plp", "created_at"];
-
+    protected $fillable = ['Noid', 'TwoLetterCode', 'ThreeLetterCode', 'AirlinesName', 'CountryCode', 'Actived', 'Void', 'KodeGudangByCustom', 'WHcode', 'activeGud', 'flag_ekspor', 'flag_import', 'flag_outgoing', 'flag_incoming', 'flag_plp', 'created_at'];
 }

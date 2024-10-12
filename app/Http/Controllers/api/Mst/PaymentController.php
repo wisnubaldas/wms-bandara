@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group PaymentController
  *
  * APIs for App\Http\Controllers\api\Mst\PaymentController::class
- * 
  */
-
 class PaymentController extends Controller
 {
     /**
      * GET PaymentController
-     * 
      */
     public function index()
     {

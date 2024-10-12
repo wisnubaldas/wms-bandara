@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group DokCustomController
  *
  * APIs for App\Http\Controllers\api\Ekspor\DokCustomController::class
- * 
  */
-
 class DokCustomController extends Controller
 {
     /**
      * GET DokCustomController
-     * 
      */
     public function index()
     {

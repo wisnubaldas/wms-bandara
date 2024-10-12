@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group SppbEcommersController
  *
  * APIs for App\Http\Controllers\api\Impor\SppbEcommersController::class
- * 
  */
-
 class SppbEcommersController extends Controller
 {
     /**
      * GET SppbEcommersController
-     * 
      */
     public function index()
     {

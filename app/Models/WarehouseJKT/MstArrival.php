@@ -8,8 +8,6 @@ use Prettus\Repository\Traits\TransformableTrait;
 
 /**
  * Class MstArrival.
- *
- * @package namespace App\Models\WarehouseJKT;
  */
 class MstArrival extends Model implements Transformable
 {
@@ -21,11 +19,14 @@ class MstArrival extends Model implements Transformable
      * @var array
      */
     protected $connection = 'rdwarehouse_jkt';
+
     protected $table = 'mst_arrival';
+
     protected $primaryKey = 'Noid';
+
     // public $incrementing = false;
     // protected $keyType = 'string';
-     public $timestamps = false;
-    protected $fillable = ["Noid", "TimeArrival", "ActualTimeArrival", "Arrival", "AirlinesCode", "FlightNo", "AcType", "PayLoad", "Terminal", "Remarks", "DateOfArrival", "DateOfEntry"];
+    public $timestamps = false;
 
+    protected $fillable = ['Noid', 'TimeArrival', 'ActualTimeArrival', 'Arrival', 'AirlinesCode', 'FlightNo', 'AcType', 'PayLoad', 'Terminal', 'Remarks', 'DateOfArrival', 'DateOfEntry'];
 }

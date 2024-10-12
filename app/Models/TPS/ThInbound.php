@@ -8,9 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class ThInbound extends Model
 {
     use HasFactory;
+
     protected $connection = 'tps_online';
+
     protected $table = 'th_inbound';
+
     protected $primaryKey = 'id_';
+
     // public $incrementing = false;
     // protected $keyType = 'string';
     public $timestamps = false;
@@ -25,7 +29,7 @@ class ThInbound extends Model
     // {
     //     return 'Arrival at Incoming warehouse';
     // }
-    // // static value untuk model   
+    // // static value untuk model
     // public static function booted()
     // {
     //     parent::boot();
@@ -37,5 +41,5 @@ class ThInbound extends Model
     //         $user->_updated_by = auth()->user()->name;
     //     });
     // }
-    protected $fillable = ["tps","gate_type","waybill_smu","hawb","koli","netto","volume","kindofgood","airline_code","flight_no","origin","transit","dest","shipper_name","consignee_name","_is_active","_created_by","_created_at","_updated_by","_updated_at","_remarks_last_update","key_upload","full_check"];
+    protected $fillable = ['tps', 'gate_type', 'waybill_smu', 'hawb', 'koli', 'netto', 'volume', 'kindofgood', 'airline_code', 'flight_no', 'origin', 'transit', 'dest', 'shipper_name', 'consignee_name', '_is_active', '_created_by', '_created_at', '_updated_by', '_updated_at', '_remarks_last_update', 'key_upload', 'full_check'];
 }

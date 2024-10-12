@@ -2,16 +2,13 @@
 
 namespace App\Repositories\Eloquent\WarehouseJKT;
 
-use Prettus\Repository\Eloquent\BaseRepository;
-use Prettus\Repository\Criteria\RequestCriteria;
 use App\Contracts\Repositories\WarehouseJKT\MstDepartureRepository;
 use App\Models\WarehouseJKT\MstDeparture;
-use App\Validators\WarehouseJKT\MstDepartureValidator;
+use Prettus\Repository\Criteria\RequestCriteria;
+use Prettus\Repository\Eloquent\BaseRepository;
 
 /**
  * Class MstDepartureRepositoryEloquent.
- *
- * @package namespace App\Repositories\Eloquent\WarehouseJKT;
  */
 class MstDepartureRepositoryEloquent extends BaseRepository implements MstDepartureRepository
 {
@@ -25,8 +22,6 @@ class MstDepartureRepositoryEloquent extends BaseRepository implements MstDepart
         return MstDeparture::class;
     }
 
-    
-
     /**
      * Boot up the repository, pushing criteria
      */
@@ -34,5 +29,4 @@ class MstDepartureRepositoryEloquent extends BaseRepository implements MstDepart
     {
         $this->pushCriteria(app(RequestCriteria::class));
     }
-    
 }

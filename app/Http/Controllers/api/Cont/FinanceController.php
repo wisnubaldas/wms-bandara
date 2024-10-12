@@ -7,14 +7,11 @@ use Illuminate\Http\Request;
 
 /**
  * @group FinanceController
- *
  */
-
 class FinanceController extends Controller
 {
     /**
      * Display a listing of the resource.
-     * 
      */
     public function index()
     {

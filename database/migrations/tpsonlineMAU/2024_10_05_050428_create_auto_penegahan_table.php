@@ -15,7 +15,7 @@ class CreateAutoPenegahanTable extends Migration
     {
         Schema::create('auto_penegahan', function (Blueprint $table) {
             $table->integer('id_kms')->default(0);
-            $table->tinyInteger('type_penegahan')->nullable()->comment("1 = Import, 2 = Eksport");
+            $table->tinyInteger('type_penegahan')->nullable()->comment('1 = Import, 2 = Eksport');
             $table->string('kd_dok', 12)->nullable();
             $table->string('kd_tps', 10)->default('GBG1');
             $table->string('nm_angkut', 10)->nullable();

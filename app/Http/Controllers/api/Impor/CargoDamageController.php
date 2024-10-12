@@ -9,14 +9,11 @@ use Illuminate\Http\Request;
  * @group CargoDamageController
  *
  * APIs for App\Http\Controllers\api\Impor\CargoDamageController::class
- * 
  */
-
 class CargoDamageController extends Controller
 {
     /**
      * GET CargoDamageController
-     * 
      */
     public function index()
     {

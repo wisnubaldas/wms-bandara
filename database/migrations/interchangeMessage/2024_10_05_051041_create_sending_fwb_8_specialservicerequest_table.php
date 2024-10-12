@@ -20,7 +20,7 @@ class CreateSendingFwb8SpecialservicerequestTable extends Migration
             $table->string('LineIdentifier', 3)->nullable();
             $table->string('SpecialServiceRequest', 65)->nullable();
             $table->timestamp('created_at')->default('current_timestamp()');
-            
+
             $table->primary(['id', 'MessageKey']);
         });
     }

@@ -24,7 +24,7 @@ class CreateBatalRespPlpTable extends Migration
             $table->string('no_plp', 30)->nullable();
             $table->string('tgl_plp', 8)->nullable();
             $table->string('no_batal_plp', 30)->nullable();
-            $table->string('tgl_batal_plp', 8)->nullable()->comment("yyyyMMdd");
+            $table->string('tgl_batal_plp', 8)->nullable()->comment('yyyyMMdd');
             $table->string('alasan_batal', 150)->nullable();
         });
     }

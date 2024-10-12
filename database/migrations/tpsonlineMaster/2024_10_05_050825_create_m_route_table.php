@@ -20,7 +20,7 @@ class CreateMRouteTable extends Migration
             $table->string('origin', 5)->index('origin');
             $table->string('destination', 5)->index('destination');
             $table->boolean('void')->default(0);
-            
+
             $table->foreign('airlinescode', 'm_route_ibfk_1')->references('airlinescode')->on('m_airlines');
         });
     }
