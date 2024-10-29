@@ -10336,7 +10336,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/wisnubaldas/baldas-module",
-                "reference": "6c86280e5029fa2744ea951010eb7a506ea5651d"
+                "reference": "f4f2271d34bf4f871587ef728a4d15fa6c5d8b74"
             },
             "require": {
                 "brick/varexporter": "^0.5.0",
@@ -10349,6 +10349,7 @@
                 "bennett-treptow/laravel-migration-generator": "^4.4",
                 "brick/varexporter": "^0.5.0",
                 "codedredd/laravel-soap": "^3.0",
+                "laravel/prompts": "^0.3.0",
                 "ovac/idoc": "^1.7",
                 "prettus/l5-repository": "^2.9"
             },
@@ -10356,7 +10357,8 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Wisnubaldas\\BaldasModule\\MainServiceProvider"
+                        "Wisnubaldas\\BaldasModule\\MainServiceProvider",
+                        "Wisnubaldas\\BaldasModule\\BladeDirectivesServiceProvider"
                     ]
                 }
             },

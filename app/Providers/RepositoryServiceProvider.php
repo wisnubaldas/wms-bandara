@@ -28,6 +28,8 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstDepartureRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstDepartureRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\WarehouseJKT\MstCountryRepository::class, \App\Repositories\Eloquent\WarehouseJKT\MstCountryRepositoryEloquent::class);
         $this->app->bind(\App\Contracts\Repositories\TPS\ThInboundRepository::class, \App\Repositories\Eloquent\TPS\ThInboundRepositoryEloquent::class);
+        $this->app->bind(\App\Contracts\Repositories\MenusRepository::class, \App\Repositories\Eloquent\MenusRepositoryEloquent::class);
+        $this->app->bind(\App\UseCase\MenusUseCaseInterface::class,\App\UseCase\MenusUseCase::class);
         //:end-bindings:
     }
 }
