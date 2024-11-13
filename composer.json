@@ -9,12 +9,17 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
+    "bkwld/laravel-pug": "^2.4",
     "brick/varexporter": "^0.5.0",
     "codedredd/laravel-soap": "^3.0",
+    "dingo/blueprint": "^0.5.0",
+    "js-phpize/js-phpize-phug": "^2.2",
     "laravel/framework": "^11.9",
     "laravel/prompts": "^0.3.0",
+    "laravel/sanctum": "^4.0",
     "laravel/tinker": "^2.9",
-    "ovac/idoc": "^1.7"
+    "ozdemir/datatables": "^2.3",
+    "phputil/datatables": "^2.0"
   },
   "require-dev": {
     "bennett-treptow/laravel-migration-generator": "^4.4",
@@ -76,9 +81,11 @@
     "sort-packages": true,
     "allow-plugins": {
       "pestphp/pest-plugin": true,
-      "php-http/discovery": true
+      "php-http/discovery": true,
+      "pug/installer": true,
+      "nodejs-php-fallback/nodejs-php-fallback": true
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }

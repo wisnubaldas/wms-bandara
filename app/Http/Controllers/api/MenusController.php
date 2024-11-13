@@ -54,8 +54,6 @@ class MenusController extends Controller
      *      "success": true
      * }
      *
-     * @param  MenusControllerRequest  $request
-     * 
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -83,7 +81,6 @@ class MenusController extends Controller
      * The ID of the item to retrieve. Example: 10
      * 
      * @authenticated
-     * @param  MenusControllerRequest  $request
      * @responseFile responses/MenusController.json
      */
     public function update(Request $request, string $id)

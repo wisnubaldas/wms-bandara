@@ -20,7 +20,7 @@ class MenusUseCase implements MenusUseCaseInterface
         $menu = $this->menu->all(['id','parent_id','nama','icon','path','label','badge'])->toArray();
         $treeMenu = self::generateTree($menu);
         $printMenu = self::printTree($treeMenu);
-        return compact('treeMenu','printMenu');
+        return self::generateTree($menu);
     }
     protected static function generateTree($items, $parentId = 0)
     {
