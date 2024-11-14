@@ -1,58 +1,15 @@
-div(id="top-menu" class="app-top-menu")
-    div(class="menu" x-data="menuTree()")
-        template(x-if="(tree > 0)" x-for="item in tree" :key="item.id")
-            div(class="menu-item " x-bind:class="(item.children.length > 0)?'has-sub':'active'")
-                a(class="menu-link" x-bind:href="item.path")
-                    div(class="menu-icon")
-                        i.fa.fa-th-large
-                    div(class="menu-text" x-text="item.nama")
-                    div(class="" x-bind:class="(item.children.length > 0)?'menu-caret':''")
-                    //- div(x-data="console.log(item.children)")
-                template(x-for="(child,index) in item.children")
-                    div 
-                        template(x-if="child.children.length > 0 ")
-                            div(class="menu-submenu" )
-                                div(class="menu-item has-sub")
-                                    a(class="menu-link" x-bind:href="child.path")
-                        template(x-if="child.children.length < 0 ")
-                //-     
-                //-         div(class="menu-item" x-if="typeof child !== 'undefined'")
-                //-             a(class="menu-link" x-bind:href="child.path") 
-                //-                 div(class="menu-text" x-text="child.nama")
-                //- template(x-component="recursive-menu" :tree="item.children")
-
-        .menu-item.has-sub
-            a.menu-link(href='javascript:;')
-                .menu-icon
-                i.fa.fa-align-left
-                .menu-text Menu Level
-                .menu-caret
-            .menu-submenu
-                .menu-item.has-sub
-                a.menu-link(href='javascript:;')
-                    .menu-text Menu 1.1
-                    .menu-caret
-                .menu-submenu
-                    .menu-item.has-sub
-                    a.menu-link(href='javascript:;')
-                        .menu-text Menu 2.1
-                        .menu-caret
-                    .menu-submenu
-                        .menu-item
-                        a.menu-link(href='javascript:;')
-                            .menu-text Menu 3.1
-                        .menu-item
-                        a.menu-link(href='javascript:;')
-                            .menu-text Menu 3.2
-                    .menu-item
-                    a.menu-link(href='javascript:;')
-                        .menu-text Menu 2.2
-                    .menu-item
-                    a.menu-link(href='javascript:;')
-                        .menu-text Menu 2.3
-                .menu-item
-                a.menu-link(href='javascript:;')
-                    .menu-text Menu 1.2
-                .menu-item
-                a.menu-link(href='javascript:;')
-                    .menu-text Menu 1.3
+.col-12.justify-content-center  
+    .ticker
+        .title
+          h5 Status Response
+        |  
+        .news
+          marquee.news-content
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            |  
+            p
+              | Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+            |  
+            p
+              | Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam

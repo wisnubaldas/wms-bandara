@@ -1,0 +1,19 @@
+.row(x-data="menuTree()" )
+    template(x-for="menu in tree" :key="menu.id")
+        .col-lg-4.col-md-4
+            .h5.fw-bolder.mb-2(x-text="menu.nama")
+            .row
+                template(x-for="(child, index) in menu.children" :key="index")
+                    .col-lg-6
+                        ul.nav.d-block.fw-bold
+                                li(x-data="{ isHovered: false }")
+                                    a.text-ellipsis.text-decoration-none(
+                                    href='javascript:;'
+                                    x-on:click="detail_menu(child.id)" 
+                                    @mouseover="isHovered = true" 
+                                    @mouseout="isHovered = false"  
+                                    :class="{ 'text-green-500 fw-800 fs-5 shadow': isHovered, 'text-black-500': !isHovered }")
+                                        i.fa.fa-chevron-right.fa-fw.text-gray-500
+                                        span(x-text="child.nama")
+                 
+            hr

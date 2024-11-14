@@ -9,11 +9,10 @@ head
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet')
     link(rel="stylesheet", href="/assets/css/vendor.min.css")
     link(rel="stylesheet", href="/assets/css/default/app.min.css")
+    link(rel="stylesheet", href="/assets/css/my_custom.css")
     block css
 body 
-    #loader.app-loader
-        span.spinner
-    #app.app.app-header-fixed.app-sidebar-fixed.app-without-sidebar.app-with-top-menu
+    #app.app.app-header-fixed.app-sidebar-fixed.app-without-sidebar
         include /template/header
         include /template/menu
         #content.app-content
@@ -25,36 +24,5 @@ body
     script(src="/assets/js/app.min.js") 
     script(src="/assets/js/theme/default.min.js") 
     script(src="/assets/js/custom.js")
-    script(type="text/javascript"). 
-            function menuTree() {
-                return {
-                    tree: [],
-                    init() {
-                        fetch('/api/menus/')
-                            .then(response => response.json())
-                            .then(data => {
-                                let map = [];
-                                // Create a map with ID as the key and children array
-                                data.forEach(item => {
-                                    map[item.id] = { ...item, children: [] };
-                                });
-
-                                // Iterate over the data again to establish parent-child relationships
-                                data.forEach(item => {
-                                    //- console.log("cibay",item)
-                                    if (item.parent_id == "0") {
-                                        // Top-level items (no parent)
-                                        this.tree.push(map[item.id]);
-                                    } else {
-                                        // Items with a parent, add to the parent's children
-                                        if (map[item.parent_id] && typeof map[item.parent_id] !== 'undefined') {
-                                            map[item.parent_id].children.push(map[item.id]);
-                                        }
-                                    }
-                                });
-                            })
-                            .catch(error => console.error('Error fetching menu data:', error));
-                    },
-                }
-            }
+    script(src="/assets/js/my_app/menu_pages.js")
     block js

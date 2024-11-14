@@ -3,8 +3,8 @@
         a.navbar-brand(href='#')
             span.navbar-logo
             |  
-            b Mitra
-            | &ensp; Adira Utama
+            b MAU
+            | &ensp;Mitra Adira Utama
         button.navbar-mobile-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#top-navbar')
             span.fa-stack.fa-lg
                 i.far.fa-square.fa-stack-2x
@@ -18,97 +18,11 @@
             .navbar-item.dropdown.dropdown-lg
               a.navbar-link.dropdown-toggle.d-flex.align-items-center(href='#', data-bs-toggle='dropdown')
                 i.fa.fa-th-large.fa-fw.me-1
-                span.d-lg-inline.d-md-none CTOS
+                span.d-lg-inline.d-md-none CTOS Start Here
                 b.caret.ms-1
               .dropdown-menu.dropdown-menu-lg
-                .row
-                  .col-lg-4.col-md-4
-                    .h5.fw-bolder.mb-2 UI Kits
-                    .row.mb-3
-                      .col-lg-6
-                        ul.nav.d-block.fw-bold
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  FontAwesome
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Ionicons
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Simple Line Icons
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Typography
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Media Object
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Widget Boxes
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Tabs &amp; Accordions
-                  .col-lg-4.col-md-4
-                    .h5.fw-bolder.mb-2
-                      | Page Options 
-                      span.badge.bg-pink.ms-2 11
-                    .row
-                      .col-lg-6
-                        ul.nav.d-block.fw-bold
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Blank Page
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Footer 
-                              span.badge.bg-success.py-1 NEW
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page without Sidebar
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Right Sidebar
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Minified Sidebar
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Two Sidebar
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Line Icons
-                      .col-lg-6
-                        ul.nav.d-block.fw-bold
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Full Height Content
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Mega Menu
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Light Sidebar
-                          li
-                            a.text-ellipsis.text-gray-800.text-decoration-none(href='javascript:;')
-                              i.fa.fa-chevron-right.fa-fw.text-gray-500
-                              |  Page with Large Sidebar
+                include /template/menu-header
+                
     .navbar-nav
         .navbar-item.navbar-form
             form(action='', method='POST', name='search')

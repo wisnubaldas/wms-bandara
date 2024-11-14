@@ -44,55 +44,7 @@ class MenusController extends Controller
         $menusUseCase->menu = $this->menu;
         return $menusUseCase->build();
     }
-
-    /**
-     * Create MenusController
-     * 
-     * @authenticated
-     * @response {
-     *      "status": 200,
-     *      "success": true
-     * }
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Show MenusController data by id.
-     * 
-     * @pathParam id integer required
-     * The ID of the item to retrieve. Example: 10
-     * 
-     * @responseFile responses/MenusController.json
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show MenusController data by id.
-     * 
-     * @pathParam id integer required
-     * The ID of the item to retrieve. Example: 10
-     * 
-     * @authenticated
-     * @responseFile responses/MenusController.json
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * DELETE MenusController
-     */
-    public function destroy(string $id)
-    {
-        //
+    public function detail_menu($id) {
+        return $this->menu->findWhere(['parent_id'=>$id]);
     }
 }

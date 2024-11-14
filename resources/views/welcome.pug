@@ -2,6 +2,7 @@ extends /template/index
 
 block content 
     h1(x-data="{message:'I ❤️ Alpine' }" x-text="message") title
+    .col-12(x-data="console.log($store.childMenuShared.)")
 block js 
     script(type="text/javascript").  
 
